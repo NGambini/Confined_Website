@@ -1,5 +1,5 @@
 <div class="main-menu">
     <div *ngFor="let page of pages">
-        <div class="menu-item">{{page.title}}</div>
+        <a [routerLink]="page.route" class="menu-item" >{{page.title}}</a>
     </div>
 </div>

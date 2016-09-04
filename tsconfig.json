@@ -17,7 +17,12 @@
    "app/main.ts",
    "app/main-menu/main-menu.component.ts",
    "app/main-menu/page.model.ts",
-   "app/home/home.component.ts"
+   "app/home/home.component.ts",
+   "app/news/news.component.ts",
+   "app/media/media.component.ts",
+   "app/concept/concept.component.ts",
+   "app/contact/contact.component.ts",
+   "app/team/team.component.ts"
  ],
   "exclude": [
     "node_modules"

@@ -10,11 +10,14 @@ declare var __moduleName: string;
   templateUrl: 'main-menu.component.html'
 })
 
+// TODO masquer la page non active
+
 export class MainMenuComponent implements OnInit {
   pages: Array<PageModel>;
   
   ngOnInit() {
     this.pages = [
+      new PageModel("Home", "/home"),
       new PageModel("News", "/news"),
       new PageModel("Concept", "/concept"),
       new PageModel("Media", "/media"),
