@@ -1,5 +1,10 @@
-<div class="main-menu">
-    <div *ngFor="let page of pages">
-        <a [routerLink]="page.route" class="menu-item" >{{page.title}}</a>
+<div class="site-title">Confined</div>
+
+<div [ngClass]="{'responsive': mobileMenuOpen, 'main-menu': true}">
+    <div class="menu-item" *ngFor="let page of pages">
+        <a [routerLink]="page.route" class="menu-item-link" >{{page.title}}</a>
+    </div>
+    <div class="menu-item icon" (click)="toggleMobileMenu()">
+        <a>wesh </a>
     </div>
 </div>

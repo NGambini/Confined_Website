@@ -16,3 +16,6 @@ node_modules/*
 ## Typescript - Angular2 directory
 app/**/*.js
 app/**/*.js.map
+
+## WWWROOT folder
+wwwroot/*

@@ -1,0 +1,58 @@
+body {
+    background: url('images/bg-blured.png');
+}
+
+.site-title {
+    width: 50px;
+    margin: 0 auto 0 auto;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.main-menu {
+    width: 40%;
+    margin: 0 auto 0 auto;
+}
+
+.menu-item {
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+}
+
+.menu-item-link {
+    color: #999999;
+}
+
+.menu-item-link:hover {
+    color: #AAAAAA;
+}
+
+.menu-item-link-active {
+    color: #DDDDDD;
+}
+
+@media screen and (max-width:680px) {
+    .main-menu .menu-item:not(:first-child) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:680px) {
+  .main-menu.responsive {
+      position: relative;
+      }
+  .main-menu.responsive .menu-item.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .main-menu.responsive .menu-item {
+    float: none;
+    display: inline;
+    background-color: #FF0000;
+  }
+  .main-menu.responsive .menu-item a {
+    display: block;
+    text-align: left;
+  }
+}

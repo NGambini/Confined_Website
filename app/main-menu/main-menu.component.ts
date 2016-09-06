@@ -1,20 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
-import { PageModel } from './page.model';
+import { PageModel } from "./page.model";
 
 declare var __moduleName: string;
 
 @Component({
   moduleId: __moduleName,
-  selector: 'main-menu',
-  templateUrl: 'main-menu.component.html'
+  selector: "main-menu",
+  templateUrl: "main-menu.component.html"
 })
 
 // TODO masquer la page non active
 
 export class MainMenuComponent implements OnInit {
+  private mobileMenuOpen = false;
   pages: Array<PageModel>;
-  
+
   ngOnInit() {
     this.pages = [
       new PageModel("Home", "/home"),
@@ -24,5 +25,9 @@ export class MainMenuComponent implements OnInit {
       new PageModel("Team", "/team"),
       new PageModel("Contact", "/contact")
     ];
+  }
+
+  private toggleMobileMenu() {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
   }
 }

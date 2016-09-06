@@ -1,29 +1,31 @@
 {
   "compilerOptions": {
-  "target": "es6",
-  "module": "system",
-  "moduleResolution": "node",
-  "sourceMap": true,
-  "emitDecoratorMetadata": true,
-  "experimentalDecorators": true,
-  "removeComments": false,
-  "noImplicitAny": false,
-  "watch": true
- },
- "files" : [
-   "app/app.component.ts",
-   "app/app.module.ts",
-   "app/app.routing.ts",
-   "app/main.ts",
-   "app/main-menu/main-menu.component.ts",
-   "app/main-menu/page.model.ts",
-   "app/home/home.component.ts",
-   "app/news/news.component.ts",
-   "app/media/media.component.ts",
-   "app/concept/concept.component.ts",
-   "app/contact/contact.component.ts",
-   "app/team/team.component.ts"
- ],
+    "target": "es6",
+    "module": "system",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "watch": true,
+    "rootDir": "app",
+    "outDir": "wwwroot"
+  },
+  "files": [
+    "app/app.component.ts",
+    "app/app.module.ts",
+    "app/app.routing.ts",
+    "app/main.ts",
+    "app/main-menu/main-menu.component.ts",
+    "app/main-menu/page.model.ts",
+    "app/home/home.component.ts",
+    "app/news/news.component.ts",
+    "app/media/media.component.ts",
+    "app/concept/concept.component.ts",
+    "app/contact/contact.component.ts",
+    "app/team/team.component.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

@@ -41,6 +41,18 @@
             "port": 5858,
             "sourceMaps": false,
             "outDir": null
+        },
+        {
+            "name": "Debug Current TypeScript File",
+            "type": "node",
+            "request": "launch",
+            // File currently being viewed
+            "program": "${file}",
+            "stopOnEntry": true,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "sourceMaps": true,
+            "outDir": "${workspaceRoot}/wwwroot"
         }
     ]
 }

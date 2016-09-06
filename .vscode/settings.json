@@ -8,5 +8,11 @@
         "**/*.js": { "when": "$(basename).ts"},
         "**/*.js.map": true
     },
-    "typescript.tsdk": "node_modules/typescript/lib"
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.autoClosingBrackets": false,
+    "tslint.enable": true,
+    "tslint.run": "onType",
+    "tslint.configFile": "tslint.json",
+    "tslint.ignoreDefinitionFiles": true,
+    "tslint.validateWithDefaultConfig": true
 }
