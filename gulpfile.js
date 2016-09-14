@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     tsconfig = require('tsconfig-glob'),
     yargs = require('yargs'),
     del = require("del"),
-    runSequence = require('run-sequence'),
+    runSequence = require('run-sequence').use(gulp),
     tslint = require("gulp-tslint");
 
 var tscConfig = require('./tsconfig.json');
@@ -50,7 +50,7 @@ paths.vendors = [
 ];
 paths.vendorsDest = paths.webroot + 'lib';
 paths.angularDest = paths.vendorsDest + '/@angular';
-paths.rxjsDest = paths.vendorsDest + '/rxjs';
+paths.rxjsDest = paths.vendorsDest  + '/rxjs';
 paths.rxjsFiles = [
     paths.rxjsDest + '/add/**/*.js',
     paths.rxjsDest + '/observable/**/*.js',
@@ -60,7 +60,7 @@ paths.rxjsFiles = [
     paths.rxjsDest + '/util/**/*.js',
     paths.rxjsDest + '/*.js'
 ];
-paths.rxjsBundle = paths.rxjsDest + '/bundles/rxjs.min.js';
+paths.rxjsBundle = paths.vendorsDest + '/bundles/rxjs.min.js';
 paths.fontAwesomeDest = paths.vendorsDest + '/font-awesome';
 paths.config = [
     'systemjs.config.js'
@@ -105,7 +105,7 @@ gulp.task('copy:font-awesome', function () {
                .pipe(gulp.dest(paths.fontAwesomeDest));
 });
 
-gulp.task('copy:vendors', ['copy:angular', 'copy:rxjs', 'copy:font-awesome'], function () {
+gulp.task('copy:vendors', function () {
     return gulp.src(paths.vendors)
                .pipe(gulp.dest(paths.vendorsDest));
 });
@@ -116,19 +116,20 @@ gulp.task('copy:config', function () {
 });
 
 gulp.task('copy', function (done) {
-    runSequence("copy:templates", "copy:vendors", "copy:config", done);
+    runSequence("copy:templates", "copy:angular", "copy:rxjs", "copy:font-awesome", "copy:vendors", "copy:config", done);
 });
+
 
 gulp.task('bundles:rxjs', function (done) {
     var builder = new Builder(paths.vendorsDest, './systemjs.config.js');
-    var builderCondig = {
+    var builderConfig = {
         minify: true,
         sourceMaps: true,
         mangle: false
     };
 
     builder
-        .bundle(paths.rxjsFiles, paths.rxjsBundle, builderCondig)
+        .bundle(paths.rxjsFiles, paths.rxjsBundle, builderConfig)
         .then(function () {
             done();
         })
@@ -138,33 +139,12 @@ gulp.task('bundles:rxjs', function (done) {
         });
 });
 
-gulp.task('bundles', function (done) {
-    runSequence("bundles:rxjs", done);
-});
-
-// gulp.task('less:lint', function () {
-//     return gulp.src(paths.siteLess)
-//                .pipe(plugins.recess());
-// });
-
-// gulp.task('less:compile', function () {
-//     return gulp.src(paths.siteLess)
-//                .pipe(plugins.less())
-//                .pipe(plugins.cleanCss())
-//                .pipe(gulp.dest(paths.lessDest));
-// });
-
-// gulp.task('less', function (done) {
-//     runSequence("less:lint", "less:compile", done);
-// });
-
 gulp.task('typescript:lint', function () {
     var filter = plugins.filter(['**/*.ts', '!**/*d.ts']);
 
     return gulp.src(['app/**/*.ts', 'typings/**/*.ts'])
                .pipe(filter)
-               .pipe(tslint({ }))
-              // .pipe(tslint.report("verbose"))
+               .pipe(tslint({ }));
 });
 
 gulp.task('typescript:compile', function () {
@@ -192,8 +172,12 @@ gulp.task("clean", function () {
     del(paths.allDest);
 });
 
+gulp.task("bundle", function (done) {
+    runSequence('bundles:rxjs', done);
+});
+
 gulp.task('build', function (done) {
-    runSequence(/*'less',*/ 'typescript', 'copy', 'bundles', done);
+    runSequence('typescript', 'copy', 'bundle', done);
 });
 
 gulp.task('rebuild', function (done) {
@@ -201,7 +185,6 @@ gulp.task('rebuild', function (done) {
 });
 
 gulp.task("watch", ['build'], function () {
-    //gulp.watch(paths.less, ['less']);
     gulp.watch(paths.typescript, ['typescript']);
     gulp.watch(paths.templates, ['copy:templates']);
     gulp.watch(paths.config, ['copy:config']);
