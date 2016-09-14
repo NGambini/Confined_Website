@@ -1,28 +1,24 @@
 /* Angular */
 
-import { NgModule }      from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { Routes, RouterModule }   from '@angular/router';
-import { routing, appRoutingProviders } from './app.routing';
+import { NgModule }      from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { Routes, RouterModule }   from "@angular/router";
+import { routing, appRoutingProviders } from "./app.routing";
 
 /* Global */
-import { AppComponent } from './app.component';
-import { MainMenuComponent } from './main-menu/main-menu.component'
+import { AppComponent } from "./app.component";
+import { MainMenuComponent } from "./main-menu/main-menu.component";
 
-/* Pages */ 
-import { HomeComponent } from './home/home.component';
-import { NewsComponent } from './news/news.component';
-import { ConceptComponent } from './concept/concept.component';
-import { MediaComponent } from './media/media.component';
-import { TeamComponent } from './team/team.component';
-import { ContactComponent } from './contact/contact.component';
+/* Pages */
+import { HomeComponent } from "./home/home.component";
+import { NewsComponent } from "./news/news.component";
+import { ConceptComponent } from "./concept/concept.component";
+import { MediaComponent } from "./media/media.component";
+import { TeamComponent } from "./team/team.component";
+import { ContactComponent } from "./contact/contact.component";
 
 @NgModule({
-  imports: 
-  [
-    BrowserModule,
-    routing
-  ],
+  bootstrap: [AppComponent],
   declarations: [
     AppComponent,
     MainMenuComponent,
@@ -31,12 +27,16 @@ import { ContactComponent } from './contact/contact.component';
     ConceptComponent,
     MediaComponent,
     TeamComponent,
-    ContactComponent
+    ContactComponent,
+  ],
+  imports:
+  [
+    BrowserModule,
+    routing,
   ],
   providers: [
-    appRoutingProviders
-  ],
-  bootstrap: [AppComponent]
+    appRoutingProviders,
+  ]
 })
 
 

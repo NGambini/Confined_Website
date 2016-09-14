@@ -1,1 +1,7 @@
-<div>news</div>
+<div>
+    <div *ngFor="let article of news">
+        <h3>{{ article.getTranslation(selectedLanguage).title }}</h3>
+        <div>{{ article.getTranslation(selectedLanguage).content }}</div>
+        <img *ngFor="let image of article.imagesUrl" src="image">
+    </div>
+</div>
