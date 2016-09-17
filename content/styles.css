@@ -1,5 +1,46 @@
+@font-face {
+    font-family: "Walkway";
+    src: url("./fonts/Walkway.ttf");
+}
+
+@font-face {
+    font-family: "ZonaPro";
+    src: url("./fonts/ZonaPro.otf");
+}
+
 body {
-    background: url('images/bg-blured.png');
+    background-color: #000000 !important;
+}
+
+.download-button {
+    border: 1px solid #999999;
+    padding: 5px 5px 5px 5px;
+    color: #999999;
+    display: block;
+    width: 182px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    border: 1px solid #AAAAAA;
+    color: #AAAAAA;
+}
+
+.download-big-text {
+    font-size: 10pt;
+}
+
+.download-small-text {
+    font-size: 8pt;
+}
+
+.title-image {
+    margin: 0 auto 0 auto;
+    width: 500px;
+    height: 62px;
+    display: block;
 }
 
 .site-title {
@@ -9,9 +50,38 @@ body {
     margin-bottom: 1em;
 }
 
+@media (min-width: 543px) {
+    .main-menu-holder {
+        padding-top: 50px;
+        height: 310px;
+        background: url('images/bg-blured.png');
+    }
+
+    .main-menu {
+        margin-top: 40px;
+    }
+}
+
+.navbar-toggler {
+    position:absolute;
+    right: 10px;
+}
+
+.mobile-title {
+    font-family: Walkway;
+    color: #DDDDDD;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    padding: .5rem .75rem !important;
+    font-weight: bold;
+}
+
 .main-menu {
-    width: 40%;
+    text-align: center;
     margin: 0 auto 0 auto;
+    padding-top:200px;
+    background-color: transparent;
 }
 
 .menu-item {
@@ -19,8 +89,16 @@ body {
     margin: 0px 20px 0px 20px;
 }
 
+.navbar-toggler {
+    color:#999999;
+    float:right;
+}
+
 .menu-item-link {
+    font-family: Walkway;
     color: #999999;
+    font-size: 1.1em;
+    letter-spacing: 0.05em;
 }
 
 .menu-item-link:hover {
@@ -28,31 +106,5 @@ body {
 }
 
 .menu-item-link-active {
-    color: #DDDDDD;
-}
-
-@media screen and (max-width:680px) {
-    .main-menu .menu-item:not(:first-child) {
-        display: none;
-    }
-}
-
-@media screen and (max-width:680px) {
-  .main-menu.responsive {
-      position: relative;
-      }
-  .main-menu.responsive .menu-item.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .main-menu.responsive .menu-item {
-    float: none;
-    display: inline;
-    background-color: #FF0000;
-  }
-  .main-menu.responsive .menu-item a {
-    display: block;
-    text-align: left;
-  }
+    color: #DDDDDD !important;
 }

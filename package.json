@@ -22,7 +22,7 @@
     "@angular/platform-server": "2.0.0-rc.6",
     "@angular/router": "3.0.0-rc.2",
     "@angular/upgrade": "2.0.0-rc.6",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0-alpha.4",
     "browser-sync": "^2.15.0",
     "core-js": "^2.4.1",
     "font-awesome": "^4.6.3",

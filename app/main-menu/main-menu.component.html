@@ -1,10 +1,30 @@
-<div class="site-title">Confined</div>
-
-<div [ngClass]="{'responsive': mobileMenuOpen, 'main-menu': true}">
-    <div class="menu-item" *ngFor="let page of pages">
-        <a [routerLink]="page.route" class="menu-item-link" >{{page.title}}</a>
+<div class="main-menu-holder">
+  <img class="title-image hidden-xs-down" src="content/images/logo.png">
+  <div class="download-button hidden-xs-down">
+    <span class="download-big-text">LAST VERSION DOWNLOAD</span>
+    <br>
+    <span class="download-small-text">FOR WINDOWS</span>
+  </div>
+  <nav class="main-menu navbar">
+    <div class="clearfix">
+      <button #mobileMenu (click)="isCollapsed = !isCollapsed"
+        class="navbar-toggler pull-xs-right hidden-sm-up" type="button"
+        aria-controls="bd-main-nav"
+        aria-label="Toggle navigation">
+          {{menuIcon}}
+      </button>
+      <div (click)="isCollapsed = true" class="mobile-title hidden-sm-up">
+        {{getSelectedPage().title}}
+      </div>
     </div>
-    <div class="menu-item icon" (click)="toggleMobileMenu()">
-        <a>wesh </a>
+    <div class="navbar-toggleable-xs navbar-collapse" id="bd-main-nav"
+    [attr.aria-expanded]="!isCollapsed" [ngClass]="{collapse: isCollapsed}">
+      <ul class="nav navbar-nav" style="display:inline-block">
+        <li (click)="isCollapsed = true" *ngFor="let page of pages"
+          class="nav-item" routerLinkActive="active" [hidden]="isHidden(page)" >
+          <a class="nav-item nav-link menu-item-link" (click)="onPageSelected(page)" [routerLink]="[page.route]" routerLinkActive="active">{{page.title}}</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 </div>

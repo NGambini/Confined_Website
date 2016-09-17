@@ -4,7 +4,7 @@ declare var __moduleName: string;
 
 @Component({
   moduleId: __moduleName,
-  selector: "my-app",
+  selector: "confined-app",
   templateUrl: "app.component.html"
 })
 

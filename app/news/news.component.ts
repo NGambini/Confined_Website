@@ -20,10 +20,9 @@ export class NewsComponent implements OnInit {
     constructor(private _newsService: NewsServiceMock) {}
 
     public ngOnInit() {
+        this.selectedLanguage = Languages.English;
         this._newsService.getNews().subscribe(news => this.news = news,
                                               error => { console.log(error); },
                                               () => undefined);
     }
-
-    
 }
