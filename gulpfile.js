@@ -25,13 +25,15 @@ var Builder = require('systemjs-builder');
 var paths = {
     app: "./app/",
     scripts: "Scripts/",
-    styles: "Content/Styles",
     webroot: "./wwwroot/",
     npm: "./node_modules/",
     angular: "./node_modules/@angular",
     rxjs: "./node_modules/rxjs",
-    fontAwesome: "./node_modules/font-awesome"
-};
+    fontAwesome: "./node_modules/font-awesome",
+    bootstrap: "./node_modules/bootstrap/dist",
+    content: "./content/",
+    contentWatch: "./content/**/*"
+}
 
 paths.typescript = paths.app + "**/*.ts";
 paths.compiledTs = paths.webroot + "app";
@@ -62,6 +64,8 @@ paths.rxjsFiles = [
 ];
 paths.rxjsBundle = paths.vendorsDest + '/bundles/rxjs.min.js';
 paths.fontAwesomeDest = paths.vendorsDest + '/font-awesome';
+paths.bootstrapDest = paths.vendorsDest + '/bootstrap';
+paths.contentDest = paths.webroot + '/content';
 paths.config = [
     'systemjs.config.js'
 ];
@@ -105,6 +109,16 @@ gulp.task('copy:font-awesome', function () {
                .pipe(gulp.dest(paths.fontAwesomeDest));
 });
 
+gulp.task('copy:bootstrap', function () {
+    return gulp.src(paths.bootstrap + "/**/*.{css,js}")
+               .pipe(gulp.dest(paths.bootstrapDest));
+});
+
+gulp.task('copy:content', function () {
+    return gulp.src(paths.content + "/**/*.{css,js,png,jpg,ttf,otf}")
+               .pipe(gulp.dest(paths.contentDest));
+});
+
 gulp.task('copy:vendors', function () {
     return gulp.src(paths.vendors)
                .pipe(gulp.dest(paths.vendorsDest));
@@ -116,7 +130,7 @@ gulp.task('copy:config', function () {
 });
 
 gulp.task('copy', function (done) {
-    runSequence("copy:templates", "copy:angular", "copy:rxjs", "copy:font-awesome", "copy:vendors", "copy:config", done);
+    runSequence("copy:templates", "copy:content", "copy:angular", "copy:rxjs", "copy:bootstrap", "copy:font-awesome", "copy:vendors", "copy:config", done);
 });
 
 
@@ -185,6 +199,7 @@ gulp.task('rebuild', function (done) {
 });
 
 gulp.task("watch", ['build'], function () {
+    gulp.watch(paths.contentWatch, ['copy:content']);
     gulp.watch(paths.typescript, ['typescript']);
     gulp.watch(paths.templates, ['copy:templates']);
     gulp.watch(paths.config, ['copy:config']);
