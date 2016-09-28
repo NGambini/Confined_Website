@@ -1,10 +1,11 @@
-<div class="main-menu-holder">
-  <img class="title-image hidden-xs-down" src="content/images/logo.png">
+<div class="main-menu-header">
+  <img class="title-image" src="content/images/logo.png">
   <div class="download-button hidden-xs-down">
-    <span class="download-big-text">LAST VERSION DOWNLOAD</span>
+    <span class="download-big-text">{{ 'MENU.DOWNLOAD' | translate }}</span>
     <br>
-    <span class="download-small-text">FOR WINDOWS</span>
+    <span class="download-small-text">{{ 'MENU.FORWINDOWS' | translate }}</span>
   </div>
+</div>
   <nav class="main-menu navbar">
     <div class="clearfix">
       <button #mobileMenu (click)="isCollapsed = !isCollapsed"
@@ -14,7 +15,7 @@
           {{menuIcon}}
       </button>
       <div (click)="isCollapsed = true" class="mobile-title hidden-sm-up">
-        {{getSelectedPage().title}}
+        - {{getSelectedPage().title}} -
       </div>
     </div>
     <div class="navbar-toggleable-xs navbar-collapse" id="bd-main-nav"
@@ -22,9 +23,9 @@
       <ul class="nav navbar-nav" style="display:inline-block">
         <li (click)="isCollapsed = true" *ngFor="let page of pages"
           class="nav-item" routerLinkActive="active" [hidden]="isHidden(page)" >
-          <a class="nav-item nav-link menu-item-link" (click)="onPageSelected(page)" [routerLink]="[page.route]" routerLinkActive="active">{{page.title}}</a>
+          <a [ngClass]="{'menu-item-link-active': page.selected}" class="nav-item nav-link menu-item-link"
+           (click)="onPageSelected(page)" [routerLink]="[page.route]" routerLinkActive="active">{{page.title}}</a>
         </li>
       </ul>
     </div>
   </nav>
-</div>

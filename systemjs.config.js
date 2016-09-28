@@ -4,14 +4,15 @@
 (function (global) {
     // map tells the System loader where to look for things
     var map = {
-        'app': 'wwwroot/app',
-        '@angular': 'wwwroot/lib/@angular'
+        'app': 'app',
+        '@angular': 'lib/@angular'
     };
     // packages tells the System loader how to load when no filename and/or no extension
     var packages = {
         'app': { main: 'main.js', defaultExtension: 'js' },
         'rxjs': { defaultExtension: 'js' },
-        'lodash': { defaultExtension: 'js' }
+        'lodash': { defaultExtension: 'js' },
+        'ng2-translate': { defaultExtension: 'js' }
     };
     var ngPackageNames = [
         'common',
@@ -39,12 +40,12 @@
     var config = {
         baseURL: global.baseUrl,
         paths: {
-            "lodash": "wwwroot/lib/lodash.min.js"
+            "lodash": "/lib/lodash.min.js"
         },
         map: map,
         packages: packages,
         bundles: {
-            "wwwroot/lib/bundles/rxjs.min.js": [
+            "/lib/bundles/rxjs.min.js": [
                 "rxjs/*",
                 "rxjs/operator/*",
                 "rxjs/observable/*",
@@ -52,9 +53,9 @@
                 "rxjs/add/observable/*",
                 "rxjs/util/*"
             ],
-            // "wwwroot/lib/bundles/ng2-translate.min.js": [
-            //     "ng2-translate/*"
-            // ]
+            "/lib/bundles/ng2-translate.min.js": [
+                "ng2-translate/*"
+            ]
         }
     };
     System.config(config);

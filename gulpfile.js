@@ -32,9 +32,12 @@ var paths = {
     fontAwesome: "./node_modules/font-awesome",
     bootstrap: "./node_modules/bootstrap/dist",
     content: "./content/",
-    contentWatch: "./content/**/*"
+    contentWatch: "./content/**/*",
+    lightbox: "./node_modules/lightbox2/dist",
+    ng2translate: "./node_modules/ng2-translate"
 }
 
+paths.index = "./index.html";
 paths.typescript = paths.app + "**/*.ts";
 paths.compiledTs = paths.webroot + "app";
 paths.less = paths.styles + "**/*.less";
@@ -62,9 +65,22 @@ paths.rxjsFiles = [
     paths.rxjsDest + '/util/**/*.js',
     paths.rxjsDest + '/*.js'
 ];
+paths.lightboxFiles = [
+    paths.npm + 'lightbox2/dist/css/lightbox.min.css',
+    paths.npm + 'lightbox2/dist/images/*',
+    paths.npm + 'lightbox2/dist/js/lightbox-plus-jquery.min.js',
+    paths.npm + 'lightbox2/dist/js/lightbox-plus-jquery.min.map'
+];
+paths.ng2translateDest = paths.vendorsDest + '/ng2-translate';
+paths.ng2translateFiles = [
+    paths.ng2translateDest + '/src/**/*.js',
+    paths.ng2translateDest + '/ng2-translate.js'
+];
+paths.ng2translateBundle = paths.vendorsDest + '/bundles/ng2-translate.min.js';
 paths.rxjsBundle = paths.vendorsDest + '/bundles/rxjs.min.js';
 paths.fontAwesomeDest = paths.vendorsDest + '/font-awesome';
 paths.bootstrapDest = paths.vendorsDest + '/bootstrap';
+paths.lightboxDest = paths.vendorsDest + '/lightbox2';
 paths.contentDest = paths.webroot + '/content';
 paths.config = [
     'systemjs.config.js'
@@ -72,6 +88,8 @@ paths.config = [
 paths.configDest = paths.webroot;
 paths.templates = paths.app + "**/*.html";
 paths.templatesDest = paths.webroot + "app";
+paths.i18n = paths.app + "/i18n/*.json";
+paths.i18nDest = paths.webroot + "app/i18n";
 
 // same array than systemjs.config.js
 var angularPackages = [
@@ -104,6 +122,16 @@ gulp.task('copy:rxjs', function () {
                .pipe(gulp.dest(paths.rxjsDest));
 });
 
+gulp.task('copy:i18n', function () {
+    return gulp.src(paths.i18n)
+               .pipe(gulp.dest(paths.i18nDest))
+});
+
+gulp.task('copy:ng2-translate', function () {
+    return gulp.src(paths.ng2translate + "/**/*.{js,js.map}")
+               .pipe(gulp.dest(paths.ng2translateDest));
+});
+
 gulp.task('copy:font-awesome', function () {
     return gulp.src(paths.fontAwesome + "/**/*.{css,otf,eot,svg,ttf,woff,wof2}")
                .pipe(gulp.dest(paths.fontAwesomeDest));
@@ -114,8 +142,13 @@ gulp.task('copy:bootstrap', function () {
                .pipe(gulp.dest(paths.bootstrapDest));
 });
 
+gulp.task('copy:lightbox', function () {
+    return gulp.src(paths.lightbox + "/**/*.{css,js,png,gif,map}")
+               .pipe(gulp.dest(paths.lightboxDest));
+});
+
 gulp.task('copy:content', function () {
-    return gulp.src(paths.content + "/**/*.{css,js,png,jpg,ttf,otf}")
+    return gulp.src(paths.content + "/**/*.{css,js,gif,png,jpg,ttf,otf}")
                .pipe(gulp.dest(paths.contentDest));
 });
 
@@ -129,8 +162,26 @@ gulp.task('copy:config', function () {
                .pipe(gulp.dest(paths.configDest));
 });
 
+gulp.task('copy:index', function () {
+    return gulp.src(paths.index)
+               .pipe(gulp.dest(paths.webroot));
+});
+
 gulp.task('copy', function (done) {
-    runSequence("copy:templates", "copy:content", "copy:angular", "copy:rxjs", "copy:bootstrap", "copy:font-awesome", "copy:vendors", "copy:config", done);
+    runSequence(
+        "copy:templates",
+        "copy:index",
+        "copy:content",
+        "copy:angular",
+        "copy:rxjs",
+        "copy:ng2-translate",
+        "copy:bootstrap", 
+        "copy:lightbox",
+        "copy:font-awesome",
+        "copy:i18n",
+        "copy:vendors",
+        "copy:config",
+        done);
 });
 
 
@@ -144,6 +195,25 @@ gulp.task('bundles:rxjs', function (done) {
 
     builder
         .bundle(paths.rxjsFiles, paths.rxjsBundle, builderConfig)
+        .then(function () {
+            done();
+        })
+        .catch(function (err) {
+            console.log(err);
+            done();
+        });
+});
+
+gulp.task('bundles:ng2-translate', function (done) {
+    var builder = new Builder(paths.vendorsDest, './systemjs.config.js');
+    var builderConfig = {
+        minify: true,
+        sourceMaps: true,
+        mangle: false
+    };
+
+    builder
+        .bundle(paths.ng2translateFiles, paths.ng2translateBundle, builderConfig)
         .then(function () {
             done();
         })
@@ -187,7 +257,7 @@ gulp.task("clean", function () {
 });
 
 gulp.task("bundle", function (done) {
-    runSequence('bundles:rxjs', done);
+    runSequence('bundles:rxjs', 'bundles:ng2-translate', done);
 });
 
 gulp.task('build', function (done) {
@@ -199,6 +269,7 @@ gulp.task('rebuild', function (done) {
 });
 
 gulp.task("watch", ['build'], function () {
+    gulp.watch(paths.index, ['copy:index']);
     gulp.watch(paths.contentWatch, ['copy:content']);
     gulp.watch(paths.typescript, ['typescript']);
     gulp.watch(paths.templates, ['copy:templates']);

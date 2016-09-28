@@ -3,11 +3,11 @@ import "rxjs/add/observable/of";
 
 import { Languages } from "../common/languages.enum";
 import { NewsService } from "./news.service";
-import { NewsTranslationModel, NewsModel } from "./news.model";
+import { NewsTranslationModel, NewsModel, ImageModel } from "./news.model";
 
 export class NewsServiceMock implements NewsService {
     private static mockedNews: Array<NewsModel> = [
-        new NewsModel("31/01/01", "artworks", [
+        new NewsModel(1, "31/01/01", "artworks", [
             new NewsTranslationModel(
             Languages.English,
             "English Title",
@@ -20,8 +20,20 @@ export class NewsServiceMock implements NewsService {
             `FRENCH Laborum ut duis eu sunt amet ad officia.
             Irure ex inlaboris laborum anim sint ullamco laboris nostrud ea.
             Sint excepteur ad ipsum Lorem deserunt incididunt mollit velit officia velit enim.`),
-        ], []),
-        new NewsModel("02/03/01", "anouncement", [
+        ],
+        [
+            new ImageModel(
+                "typical cat picture",
+                "content/images/news/dumb_cat.jpg",
+                "content/images/news/dumb_cat_thumb.jpg"
+            ),
+            new ImageModel(
+                "typical cat picture",
+                "content/images/news/dumb_cat.jpg",
+                "content/images/news/dumb_cat_thumb.jpg"
+            )
+        ]),
+        new NewsModel(2, "02/03/01", "anouncement", [
             new NewsTranslationModel(
             Languages.English,
             "English Title - news 2",

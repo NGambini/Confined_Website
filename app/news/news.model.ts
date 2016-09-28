@@ -9,12 +9,21 @@ export class NewsTranslationModel {
         public content: string) {}
 }
 
+export class ImageModel {
+    public constructor(
+        public title: string,
+        public url: string,
+        public thumbUrl: string
+    ) {}
+}
+
 export class NewsModel {
     public constructor(
+        public id: number,
         public date: string,
         public category: string,
         public translations: Array<NewsTranslationModel>,
-        public imagesUrl: Array<string>) { }
+        public imagesUrl: Array<ImageModel>) { }
 
     public getTranslation(lang: Languages): NewsTranslationModel {
         return _.find(this.translations, { locale: lang });

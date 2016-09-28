@@ -2,8 +2,10 @@
 
 import { NgModule }      from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
+import {HttpModule, Http} from "@angular/http";
 import { Routes, RouterModule }   from "@angular/router";
 import { routing, appRoutingProviders } from "./app.routing";
+import { TranslateModule, TranslateStaticLoader, TranslateLoader } from "ng2-translate/ng2-translate";
 
 /* Global */
 import { AppComponent } from "./app.component";
@@ -27,15 +29,21 @@ import { ContactComponent } from "./contact/contact.component";
     ConceptComponent,
     MediaComponent,
     TeamComponent,
-    ContactComponent,
+    ContactComponent
   ],
   imports:
   [
+    HttpModule,
     BrowserModule,
-    routing,
+    TranslateModule.forRoot({
+          deps: [Http],
+          provide: TranslateLoader,
+          useFactory: (http: Http) => new TranslateStaticLoader(http, "app/i18n", ".json")
+        }),
+    routing
   ],
   providers: [
-    appRoutingProviders,
+    appRoutingProviders
   ]
 })
 

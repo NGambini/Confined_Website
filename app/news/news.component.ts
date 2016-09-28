@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
+import { Component, OnInit, Input, AfterViewInit, ViewChildren, ElementRef } from "@angular/core";
 
 import { Languages } from "../common/languages.enum";
 import { NewsModel } from "./news.model";

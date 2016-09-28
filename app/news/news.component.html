@@ -1,7 +1,20 @@
-<div>
-    <div *ngFor="let article of news">
-        <h3>{{ article.getTranslation(selectedLanguage).title }}</h3>
+<div class="page">
+    <div class="news-block" *ngFor="let article of news;let news-index = index">
+        <div class="news-header">
+            <div class="black-box hidden-xs-down"></div>
+            <div class="title-text">
+                <h3 class="news-title">{{ article.getTranslation(selectedLanguage).title }}</h3>
+                <h4 class="news-subtitle">posted on XXXXXX in <span class="news-category">category</span>
+                </h4>
+            </div>
+        </div>
+        
         <div>{{ article.getTranslation(selectedLanguage).content }}</div>
-        <img *ngFor="let image of article.imagesUrl" src="image">
+        <div style="text-align:center">
+            <a class="news-thumbnail" *ngFor="let image of article.imagesUrl" [attr.href]="image.url"
+            [attr.data-lightbox]="news-index" [attr.data-title]="image.title">
+                <img [attr.src]="image.thumbUrl" alt="">
+            </a>
+        </div>
     </div>
 </div>

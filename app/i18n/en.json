@@ -1,0 +1,35 @@
+{
+    "MENU":{
+        "HOME": "Home",
+        "NEWS": "News",
+        "CONCEPT": "Concept",
+        "MEDIA": "Media",
+        "TEAM": "Team",
+        "CONTACT": "Contact",
+        "DOWNLOAD": "Last version download",
+        "FORWINDOWS": "For Windows"
+    },
+    "NEWS": {
+        "POSTEDON": "posted on ",
+        "IN": "in"
+    },
+    "CONCEPT": {
+        "FACTSHEET": "Factsheet",
+        "DEVELOPER": "developer",
+        "PLATFORM": "platform",
+        "PRICE": "price",
+        "LICENSE": "license",
+        "DESCRIPTION": "Description",
+        "HISTORY": "History",
+        "FEATURES": "Features",
+        "CONTENT": {
+            "DESCRIPTION": "Cillum do aliqua do laboris sunt qui exercitation sunt exercitation tempor occaecat cillum non nostrud.",
+            "HISTORY": "Cillum do aliqua do laboris sunt qui exercitation sunt exercitation tempor occaecat cillum non nostrud.",
+            "FEATURES": "Cillum do aliqua do laboris sunt qui exercitation sunt exercitation tempor occaecat cillum non nostrud."
+        }
+    },
+    "MEDIA": {
+        "SCREENS": "Screenshots",
+        "VIDEOS": "Videos"
+    }
+}

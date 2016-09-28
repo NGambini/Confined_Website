@@ -1,0 +1,17 @@
+// Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/*.js": { "when": "$(basename).ts"},
+        "**/*.js.map": true
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "tslint.enable": true,
+    "tslint.run": "onType",
+    "tslint.configFile": "tslint.json",
+    "tslint.ignoreDefinitionFiles": true,
+    "tslint.validateWithDefaultConfig": true
+}
