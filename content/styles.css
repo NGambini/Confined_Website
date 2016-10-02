@@ -24,11 +24,12 @@ body {
 }
 
 .download-button {
+    font-family: Walkway;
     border: 1px solid #999999;
-    padding: 5px 5px 5px 5px;
-    color: #999999;
+    padding: 2px 5px 2px 5px;
+    color: #DEDEDE;
     display: block;
-    width: 182px;
+    width: 250px;
     margin: 50px auto 0 auto;
     text-align: center;
     cursor: pointer;
@@ -36,15 +37,19 @@ body {
 
 .download-button:hover {
     border: 1px solid #AAAAAA;
-    color: #AAAAAA;
+    color: #c3c705;
+    border-color:#c3c705;
 }
 
 .download-big-text {
-    font-size: 10pt;
+    font-size: 12pt;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .download-small-text {
     font-size: 8pt;
+    text-transform: uppercase;
 }
 
 .title-image {
@@ -202,10 +207,32 @@ body {
 
 /* Concept */
 
-.concept-factsheet {
-
+.concept-factsheet h2, .content-title {
+    font-size: 1.6em;
+    color:#FDFDFD;
 }
 
-.concept-content {
-    
+.concept-factsheet h3 {
+    font-size: 12pt;
+    color:#FDFDFD;
+    margin-bottom: 4px;
+}
+
+.fact-item {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.content-item {
+    font-size: 12pt;
+    margin-top:10px;
+    margin-bottom: 20px;
+}
+
+.content-title {
+    text-transform: uppercase;
+}
+
+.factsheet-item {
+    font-size: 10pt;
 }

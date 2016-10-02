@@ -17,6 +17,7 @@
         "FACTSHEET": "Factsheet",
         "DEVELOPER": "developer",
         "PLATFORM": "platform",
+        "RELEASEDATE": "release date",
         "PRICE": "price",
         "LICENSE": "license",
         "DESCRIPTION": "Description",
@@ -25,7 +26,11 @@
         "CONTENT": {
             "DESCRIPTION": "Cillum do aliqua do laboris sunt qui exercitation sunt exercitation tempor occaecat cillum non nostrud.",
             "HISTORY": "Cillum do aliqua do laboris sunt qui exercitation sunt exercitation tempor occaecat cillum non nostrud.",
-            "FEATURES": "Cillum do aliqua do laboris sunt qui exercitation sunt exercitation tempor occaecat cillum non nostrud."
+            "FEATURES": "Cillum do aliqua do laboris sunt qui exercitation sunt exercitation tempor occaecat cillum non nostrud.",
+            "PLATFORM": "Windows",
+            "RELEASEDATE": "2017",
+            "PRICE": "free",
+            "DEVELOPER": "K.E.K."
         }
     },
     "MEDIA": {

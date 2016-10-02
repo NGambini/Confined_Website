@@ -1,20 +1,61 @@
 <div class="page">
-    <div class="concept-factsheet">
-        <h2 class="content-title">
-            {{ 'CONCEPT.FACTSHEET' | translate }}
-        </h2>
-    </div>
-    <div class="concept-content">
-        <h2 class="content-title">
-            {{ 'CONCEPT.DESCRIPTION' | translate }}
-        </h2>
-
-        <h2 class="content-title">
-            {{ 'CONCEPT.HISTORY' | translate }}
-        </h2>
-
-        <h2 class="content-title">
-            {{ 'CONCEPT.FEATURES' | translate }}
-        </h2>
+    <div class="row">
+        <div class="concept-factsheet col-sm-4">
+            <h2 class="content-title">
+                {{ 'CONCEPT.FACTSHEET' | translate }}
+            </h2>
+            <div class="fact-item">
+                <h3>
+                    {{ 'CONCEPT.DEVELOPER' | translate }}
+                </h3>
+                <span class="factsheet-item">
+                    {{ 'CONCEPT.CONTENT.DEVELOPER' | translate }}
+                </span>
+            </div>
+            <div class="fact-item">
+                <h3>
+                    {{ 'CONCEPT.RELEASEDATE' | translate }}
+                </h3>
+                <span class="factsheet-item">
+                    {{ 'CONCEPT.CONTENT.RELEASEDATE' | translate }}
+                </span>
+            </div>
+            <div class="fact-item">
+                <h3>
+                    {{ 'CONCEPT.PLATFORM' | translate }}
+                </h3>
+                <span class="factsheet-item">
+                    {{ 'CONCEPT.CONTENT.PLATFORM' | translate }}
+                </span>
+            </div>
+            <div class="fact-item">
+                <h3>
+                    {{ 'CONCEPT.PRICE' | translate }}
+                </h3>
+                <span class="factsheet-item">
+                    {{ 'CONCEPT.CONTENT.PRICE' | translate }}
+                </span>
+            </div>
+        </div>
+        <div class="concept-content col-sm-8">
+            <h2 class="content-title">
+                {{ 'CONCEPT.DESCRIPTION' | translate }}
+            </h2>
+            <div class="content-item">
+                {{ 'CONCEPT.CONTENT.DESCRIPTION' | translate }}
+            </div>
+            <h2 class="content-title">
+                {{ 'CONCEPT.HISTORY' | translate }}
+            </h2>
+            <div class="content-item">
+                {{ 'CONCEPT.CONTENT.HISTORY' | translate }}
+            </div>
+            <h2 class="content-title">
+                {{ 'CONCEPT.FEATURES' | translate }}
+            </h2>
+            <div class="content-item">
+                {{ 'CONCEPT.CONTENT.FEATURES' | translate }}
+            </div>
+        </div>
     </div>
 </div>
