@@ -3,7 +3,6 @@
 import { NgModule }      from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import {HttpModule, Http} from "@angular/http";
-import { Routes, RouterModule }   from "@angular/router";
 import { routing, appRoutingProviders } from "./app.routing";
 import { TranslateModule, TranslateStaticLoader, TranslateLoader } from "ng2-translate/ng2-translate";
 
@@ -17,7 +16,6 @@ import { NewsComponent } from "./news/news.component";
 import { ConceptComponent } from "./concept/concept.component";
 import { MediaComponent } from "./media/media.component";
 import { TeamComponent } from "./team/team.component";
-import { ContactComponent } from "./contact/contact.component";
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -28,8 +26,7 @@ import { ContactComponent } from "./contact/contact.component";
     NewsComponent,
     ConceptComponent,
     MediaComponent,
-    TeamComponent,
-    ContactComponent
+    TeamComponent
   ],
   imports:
   [

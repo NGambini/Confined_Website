@@ -1,5 +1,5 @@
 <div class="main-menu-header">
-  <img class="title-image" src="content/images/logo.png">
+  <img [routerLink]="['/home']" routerLinkActive="active" class="title-image" src="content/images/logo.png">
   <div class="download-button hidden-xs-down">
     <span class="download-big-text">{{ 'MENU.DOWNLOAD' | translate }}</span>
     <br>
@@ -15,17 +15,38 @@
           {{menuIcon}}
       </button>
       <div (click)="isCollapsed = true" class="mobile-title hidden-sm-up">
-        - {{getSelectedPage().title}} -
+        - {{getSelectedPage().title | translate }} -
       </div>
     </div>
     <div class="navbar-toggleable-xs navbar-collapse" id="bd-main-nav"
     [attr.aria-expanded]="!isCollapsed" [ngClass]="{collapse: isCollapsed}">
       <ul class="nav navbar-nav" style="display:inline-block">
-        <li (click)="isCollapsed = true" *ngFor="let page of pages"
+        <li (click)="isCollapsed = true" *ngFor="let page of getVisiblePages()"
           class="nav-item" routerLinkActive="active" [hidden]="isHidden(page)" >
           <a [ngClass]="{'menu-item-link-active': page.selected}" class="nav-item nav-link menu-item-link"
-           (click)="onPageSelected(page)" [routerLink]="[page.route]" routerLinkActive="active">{{page.title}}</a>
+           (click)="onPageSelected(page)" [routerLink]="[page.route]" routerLinkActive="active">{{page.title | translate }}</a>
+        </li>
+        <!--Social - mobile -->
+        <li class="social-icon social-icon-first nav-item">
+            <a class="fa fa-facebook" ></a>
+        </li>
+        <li class="social-icon nav-item">
+          <a class="fa fa-twitter" ></a>
+        </li>
+        <li class="social-icon nav-item">
+          <a class="fa fa-envelope" ></a>
+        </li>
+        <!-- Language pick - mobile -->
+        <li class="hidden-sm-up">
+          <div [ngClass]="{'flag-disabled': !isLocale('fr')}" (click)="setLocale('fr')" class="flag flag-fr" alt="French"></div>
+          /
+          <div [ngClass]="{'flag-disabled': !isLocale('en')}" (click)="setLocale('en')" class="flag flag-gb" alt="English"></div>
         </li>
       </ul>
+      <!-- Language pick - desktop -->
+      <div class="flag-holder hidden-xs-down">
+          <div [ngClass]="{'flag-disabled': !isLocale('fr')}" (click)="setLocale('fr')" class="flag flag-fr" alt="French"></div>
+          <div [ngClass]="{'flag-disabled': !isLocale('en')}" (click)="setLocale('en')" class="flag flag-gb" alt="English"></div>
+      </div>
     </div>
   </nav>

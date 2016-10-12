@@ -1,0 +1,27 @@
+
+/*!
+ * Generated with CSS Flag Sprite generator (https://www.flag-sprites.com/)
+ */
+.flag {
+    display: inline-block;
+    width: 16px;
+    height: 11px;
+    background: url('flags-base.png') no-repeat;
+    cursor:pointer;
+}
+
+.flag:hover {
+	background-image: url('flags-hover.png') !important;
+}
+
+.flag-disabled {
+	background-image: url('flags-disabled.png') !important;
+}
+
+.flag-fr {
+    background-position: 0 0;
+}
+
+.flag-gb {
+    background-position: -16px 0;
+}

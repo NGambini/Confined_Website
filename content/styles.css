@@ -60,6 +60,7 @@ body {
     width: 500px;
     height: 62px;
     display: block;
+    cursor: pointer;
 }
 
 @media (max-width: 543px) {
@@ -92,6 +93,7 @@ body {
 
     .main-menu {
         margin-top: 40px;
+        text-align: left !important;
     }
 }
 
@@ -155,10 +157,31 @@ body {
     width:130px;
     height:130px;
     top:40%;
-    left:40%;
+    left:47%;
     display: block;
     position: absolute;
 }
+
+
+.flag-holder {
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+}
+
+.social-icon{
+    cursor: pointer;
+}
+
+@media (min-width: 543px) {
+    .nav-item:not(.social-icon) {
+        margin-left: 0.5rem !important;
+        margin-right: 2rem !important;
+    }
+}
+
+
+
 
 /* News */
 
