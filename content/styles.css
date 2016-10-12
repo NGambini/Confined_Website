@@ -94,6 +94,7 @@ body {
     .main-menu {
         margin-top: 40px;
         text-align: left !important;
+        margin-bottom: 20px !important;
     }
 }
 
@@ -147,6 +148,7 @@ body {
 
 .menu-item-link:hover {
     color: #AAAAAA;
+    text-decoration: none !important;
 }
 
 .menu-item-link-active {
