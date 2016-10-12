@@ -36,6 +36,15 @@ export class MainMenuComponent implements OnInit {
     ];
   }
 
+  public get getContactEmail(): string {
+    // mailto antispam
+    let name = "contact",
+    domainCenter = "confined-game",
+    domainExtension = "com";
+
+    return 'mailto:' + name + '@' + domainCenter + '.' + domainExtension;
+  }
+
   public get menuIcon(): string {
     return this.isCollapsed ? "☰" : "✖";
   }
