@@ -10,7 +10,8 @@ declare var __moduleName: string;
 @Component({
     moduleId: __moduleName,
     selector: 'media-page',
-    templateUrl: 'media.component.html'
+    templateUrl: 'media.component.html',
+    providers: [MediaServiceMock]
 })
 
 export class MediaComponent implements OnInit {
@@ -25,7 +26,7 @@ export class MediaComponent implements OnInit {
                                                     () => undefined);
     }
 
-    public screenshotsAsRows(): Array<Array<MediaModel>> {
+    public get screenshotsAsRows(): Array<Array<MediaModel>> {
         return _.chunk(_.filter(this.medias, function(m)  { return m.isVideo === false}), this.screensInRow);
     }
 }

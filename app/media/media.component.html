@@ -1,12 +1,30 @@
 <div class="page">
     <div class="media-screenshots">
+        <h3 class="media-title">
+            {{ 'MEDIA.SCREENS' | translate }}
+        </h3>
+
         <div class="container">
-            <div class="row" 
+            <div class="screen-row row" *ngFor="let row of screenshotsAsRows">
+                <div class="screen-item col-sm-4" *ngFor="let screen of row">
+                    
+                </div>
+
+                <a class="screen-item col-sm-4" *ngFor="let screen of row" [attr.href]="screen.url"
+                            [attr.data-lightbox]="news-index" [attr.data-title]="screen.title">
+                                <img [attr.src]="screen.thumbUrl" alt="">
+                </a>
+
+            </div> 
 
         </div>
     </div>
 
     <div class="media-videos">
+
+        <h3 class="media-title">
+            {{ 'MEDIA.VIDEOS' | translate }}
+        </h3>
 
     </div>
 </div>
