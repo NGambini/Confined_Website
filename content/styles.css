@@ -289,4 +289,14 @@ body {
 /* MEDIA */ 
 
 .screen-item {
+    padding: 0 10px 0 10px;
+    display: block;
+}
+
+.screen-item > img {
+    display: block;
+}
+
+.screen-row {
+    margin-top:20px;
 }
