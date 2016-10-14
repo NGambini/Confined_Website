@@ -5,14 +5,11 @@
         </h3>
 
         <div class="container">
-            <div class="screen-row row" *ngFor="let row of screenshotsAsRows">
-                <a class="screen-item col-sm-4" *ngFor="let screen of row" [attr.href]="screen.url"
+            <div class="screen-row row">
+                <a class="screen-item col-xs-12 col-md-6 col-lg-4" *ngFor="let screen of screenshots" [attr.href]="screen.url"
                             [attr.data-lightbox]="news-index" [attr.data-title]="screen.title">
-                                <img [attr.src]="screen.thumbUrl" alt="">
+                                <img [attr.src]="'http://placehold.it/275x145'" alt="">
                 </a>
-
-            </div> 
-
         </div>
     </div>
 
@@ -21,6 +18,17 @@
         <h3 class="media-title">
             {{ 'MEDIA.VIDEOS' | translate }}
         </h3>
-
+        <div class="video-thumbnail">
+            <video *ngFor="let video of videos;let i = index" [id]="'video_' + i"> 
+                <source [src]="video.url" type="video/webm"> 
+            </video>
+             <div id="video-controls">
+                <button (click)="playPauseVideo(i)" type="button" id="play-pause">Play</button>
+                <input type="range" id="seek-bar" value="0">
+                <button type="button" id="mute">Mute</button>
+                <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                <button type="button" id="full-screen">Full-Screen</button>
+            </div>
+        </div>
     </div>
 </div>

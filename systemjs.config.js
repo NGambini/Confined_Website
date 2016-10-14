@@ -12,6 +12,7 @@
         'app': { main: 'main.js', defaultExtension: 'js' },
         'rxjs': { defaultExtension: 'js' },
         'lodash': { defaultExtension: 'js' },
+        'jquery': { defaultExtension: 'js' },
         'ng2-translate': { defaultExtension: 'js' }
     };
     var ngPackageNames = [
@@ -40,7 +41,8 @@
     var config = {
         baseURL: global.baseUrl,
         paths: {
-            "lodash": "/lib/lodash.min.js"
+            "lodash": "/lib/lodash.min.js",
+            "jquery": "/lib/jquery/jquery.min.js"
         },
         map: map,
         packages: packages,

@@ -23,6 +23,10 @@ export class MediaServiceMock implements MediaService {
             "content/images/media/images/4.jpg",
             "content/images/media/images/4_thumb.jpg",
             false),
+            new MediaModel("sample video",
+            "content/images/media/videos/sample.ogv",
+            "",
+            true)
         ];
 
     public getNews(): Observable<Array<MediaModel>> {

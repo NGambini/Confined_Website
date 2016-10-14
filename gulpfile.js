@@ -34,7 +34,8 @@ var paths = {
     content: "./content/",
     contentWatch: "./content/**/*",
     lightbox: "./node_modules/lightbox2/dist",
-    ng2translate: "./node_modules/ng2-translate"
+    ng2translate: "./node_modules/ng2-translate",
+    jquery: "./node_modules/jquery/dist/jquery.min.js"
 }
 
 paths.index = "./index.html";
@@ -82,6 +83,7 @@ paths.fontAwesomeDest = paths.vendorsDest + '/font-awesome';
 paths.bootstrapDest = paths.vendorsDest + '/bootstrap';
 paths.lightboxDest = paths.vendorsDest + '/lightbox2';
 paths.contentDest = paths.webroot + '/content';
+paths.jqueryDest = paths.vendorsDest + "/jquery";
 paths.config = [
     'systemjs.config.js'
 ];
@@ -90,6 +92,7 @@ paths.templates = paths.app + "**/*.html";
 paths.templatesDest = paths.webroot + "app";
 paths.i18n = paths.app + "/i18n/*.json";
 paths.i18nDest = paths.webroot + "app/i18n";
+
 
 // same array than systemjs.config.js
 var angularPackages = [
@@ -127,6 +130,11 @@ gulp.task('copy:i18n', function () {
                .pipe(gulp.dest(paths.i18nDest))
 });
 
+gulp.task('copy:jquery', function () {
+    return gulp.src(paths.jquery)
+               .pipe(gulp.dest(paths.jqueryDest))
+});
+
 gulp.task('copy:ng2-translate', function () {
     return gulp.src(paths.ng2translate + "/**/*.{js,js.map}")
                .pipe(gulp.dest(paths.ng2translateDest));
@@ -148,7 +156,7 @@ gulp.task('copy:lightbox', function () {
 });
 
 gulp.task('copy:content', function () {
-    return gulp.src(paths.content + "/**/*.{css,js,gif,png,jpg,ttf,otf}")
+    return gulp.src(paths.content + "/**/*.{css,js,gif,png,jpg,ttf,otf,ogv}")
                .pipe(gulp.dest(paths.contentDest));
 });
 
@@ -174,6 +182,7 @@ gulp.task('copy', function (done) {
         "copy:content",
         "copy:angular",
         "copy:rxjs",
+        "copy:jquery",
         "copy:ng2-translate",
         "copy:bootstrap", 
         "copy:lightbox",
