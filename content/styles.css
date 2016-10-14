@@ -295,3 +295,7 @@ body {
 .screen-row {
     margin-top: 15px;
 }
+
+.video-thumbnail {
+    text-align: center;
+}

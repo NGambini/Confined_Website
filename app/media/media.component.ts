@@ -4,7 +4,8 @@ import { MediaModel } from "./media.model";
 import { MediaServiceMock } from "./media.service.mock";
 
 import * as _ from "lodash";
-import * as $ from "jquery";
+
+declare var $:any;
 
 declare var __moduleName: string;
 
@@ -36,6 +37,28 @@ export class MediaComponent implements OnInit {
     }
 
     public playPauseVideo(id: number) {
-        $("#video_" + id).get(0).play();
+        let nativeElem = $("#video_" + id).get(0);
+
+        if (nativeElem.paused)
+            nativeElem.play();
+        else
+            nativeElem.pause();
+    }
+
+    public toggleFullScreenVideo(id: number) {
+        let nativeElem = $("#video_" + id).get(0);
+
+        if (nativeElem.requestFullscreen)
+            nativeElem.requestFullscreen();
+        else if (nativeElem.mozRequestFullScreen)
+            nativeElem.mozRequestFullScreen();
+        else if (nativeElem.webkitRequestFullscreen)
+            nativeElem.webkitRequestFullscreen();
+    }
+
+    public toggleMute(id: number) {
+        let nativeElem = $("#video_" + id).get(0);  
+
+        nativeElem.muted = !nativeElem.muted; 
     }
 }
