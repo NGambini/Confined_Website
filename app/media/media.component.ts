@@ -39,26 +39,43 @@ export class MediaComponent implements OnInit {
     public playPauseVideo(id: number) {
         let nativeElem = $("#video_" + id).get(0);
 
-        if (nativeElem.paused)
+        if (nativeElem.paused) {
             nativeElem.play();
-        else
+        }
+        else {
             nativeElem.pause();
+        }
     }
 
     public toggleFullScreenVideo(id: number) {
         let nativeElem = $("#video_" + id).get(0);
 
-        if (nativeElem.requestFullscreen)
+        if (nativeElem.requestFullscreen) {
             nativeElem.requestFullscreen();
-        else if (nativeElem.mozRequestFullScreen)
+        } else if (nativeElem.mozRequestFullScreen) {
             nativeElem.mozRequestFullScreen();
-        else if (nativeElem.webkitRequestFullscreen)
+        } else if (nativeElem.webkitRequestFullscreen) {
             nativeElem.webkitRequestFullscreen();
+        }
     }
 
     public toggleMute(id: number) {
-        let nativeElem = $("#video_" + id).get(0);  
+        let nativeElem = $("#video_" + id).get(0);
 
-        nativeElem.muted = !nativeElem.muted; 
+        nativeElem.muted = !nativeElem.muted;
+    }
+
+    public setVolume(id: number) {
+        let nativeElem = $("#video_" + id).get(0);
+        let val = $("#video_sound_slider_" + id).get(0).value;
+
+        nativeElem.volume = parseInt(val, 10);
+    }
+
+    public setPosition(id: number) {
+        let nativeElem = $("#video_" + id).get(0);
+        let sliderVal = $("#video_pos_slider_" + id).get(0).value;
+
+        nativeElem.currentTime = nativeElem.duration * parseFloat(sliderVal);
     }
 }
