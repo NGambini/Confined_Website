@@ -1,24 +1,23 @@
 <div class="main-menu-header">
   <img [routerLink]="['/home']" routerLinkActive="active" class="title-image" src="content/images/logo.png">
-  <div class="download-button hidden-xs-down">
-    <span class="download-big-text">{{ 'MENU.DOWNLOAD' | translate }}</span>
-    <br>
-    <span class="download-small-text">{{ 'MENU.FORWINDOWS' | translate }}</span>
+  <div class="download-button hidden-sm-down">
+    <div class="download-big-text">{{ 'MENU.DOWNLOAD' | translate }}</div>
+    <div class="download-small-text">{{ 'MENU.FORWINDOWS' | translate }}</div>
   </div>
 </div>
   <nav class="main-menu navbar">
     <div class="clearfix">
       <button #mobileMenu (click)="isCollapsed = !isCollapsed"
-        class="navbar-toggler pull-xs-right hidden-sm-up" type="button"
+        class="navbar-toggler pull-sm-right hidden-md-up" type="button"
         aria-controls="bd-main-nav"
         aria-label="Toggle navigation">
           {{menuIcon}}
       </button>
-      <div (click)="isCollapsed = true" class="mobile-title hidden-sm-up">
+      <div (click)="isCollapsed = true" class="mobile-title hidden-md-up">
         - {{getSelectedPage().title | translate }} -
       </div>
     </div>
-    <div class="navbar-toggleable-xs navbar-collapse" id="bd-main-nav"
+    <div class="navbar-toggleable-sm navbar-collapse" id="bd-main-nav"
     [attr.aria-expanded]="!isCollapsed" [ngClass]="{collapse: isCollapsed}">
       <ul class="nav navbar-nav" style="display:inline-block">
         <li (click)="isCollapsed = true" *ngFor="let page of getVisiblePages()"
@@ -44,7 +43,7 @@
         </li>
       </ul>
       <!-- Language pick - desktop -->
-      <div class="flag-holder hidden-xs-down">
+      <div class="flag-holder hidden-sm-down">
           <div [ngClass]="{'flag-disabled': !isLocale('fr')}" (click)="setLocale('fr')" class="flag flag-fr" alt="French"></div>
           <div [ngClass]="{'flag-disabled': !isLocale('en')}" (click)="setLocale('en')" class="flag flag-gb" alt="English"></div>
       </div>

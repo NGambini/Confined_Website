@@ -8,11 +8,15 @@
     src: url("./fonts/ZonaPro.otf");
 }
 
+html {
+    background-color: black !important;
+}
+
 body {
     font-family: ZonaPro, Arial, Helvetica, sans-serif !important;
     color: #ABABAB !important;
     background: url('images/bg-blured.png');
-    margin-top: -10px;
+    background-color: black !important;
 }
 
 .page {
@@ -29,24 +33,26 @@ body {
 .download-button {
     font-family: Walkway;
     border: 1px solid #999999;
-    padding: 2px 5px 2px 5px;
-    color: #DEDEDE;
+    padding: 4px 2px 2px 0px;
+    color: #FEFEFE;
     display: block;
-    width: 250px;
+    width: 260px;
     margin: 50px auto 0 auto;
     text-align: center;
     cursor: pointer;
+    line-height: 0.95em;
 }
 
 .download-button:hover {
     border: 1px solid #AAAAAA;
     color: #c3c705;
     border-color:#c3c705;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .download-big-text {
-    font-size: 12pt;
-    letter-spacing: 0.1em;
+    font-size: 14pt;
     text-transform: uppercase;
 }
 
@@ -63,7 +69,7 @@ body {
     cursor: pointer;
 }
 
-@media (max-width: 543px) {
+@media (max-width: 768px) {
     .title-image {
         width: 70%;
         height: auto !important;
@@ -75,6 +81,10 @@ body {
     .news-header {
         text-align: center;
     }
+
+    body {
+        background-image: none;
+    }
 }
 
 .site-title {
@@ -84,7 +94,7 @@ body {
     margin-bottom: 1em;
 }
 
-@media (min-width: 543px) {
+@media (min-width: 768px) {
     .main-menu-header {
         padding-top: 50px;
         height: 300px;
@@ -119,6 +129,7 @@ body {
 }
 
 .main-menu {
+    border-radius: 0 0 0 0 !important;
     text-align: center;
     margin: 0 auto 0 auto;
     padding-top:200px;
@@ -175,15 +186,12 @@ body {
     cursor: pointer;
 }
 
-@media (min-width: 543px) {
+@media (min-width: 768px) {
     .nav-item:not(.social-icon) {
-        margin-left: 0.5rem !important;
+        margin-left: 1.5rem !important;
         margin-right: 2rem !important;
     }
 }
-
-
-
 
 /* News */
 
@@ -248,7 +256,7 @@ body {
     margin-right: 10px;
 }
 
-@media (max-width: 543px) {
+@media (max-width: 768px) {
     .news-thumbnail {
         display: block;
     }
@@ -292,10 +300,21 @@ body {
     margin-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+    .screen-item {
+        text-align: center;
+    }
+
+    .video-thumbnail {
+        max-width: 400px;
+    }
+}
+
 .screen-row {
     margin-top: 15px;
 }
 
 .video-thumbnail {
     text-align: center;
+    padding-top: 10px;
 }
