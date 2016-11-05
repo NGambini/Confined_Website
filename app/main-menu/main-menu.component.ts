@@ -88,4 +88,11 @@ export class MainMenuComponent implements OnInit {
     });
     selectedPage.selected = true;
   }
+
+  public navigateHome() {
+    this.pages.forEach(page => {
+      page.selected = false;
+    });
+    this.pages[0].selected = true;
+  }
 }

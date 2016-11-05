@@ -13,6 +13,20 @@
         "POSTEDON": "posted on ",
         "IN": "in"
     },
+    "HOME": {
+        "INTRODUCTION": "A asymetrical multiplayer shooter set in a futuristic and spooky environnment",
+        "NEWCONCEPT": "Original Gameplay",
+        "THETEAM": "Who are we ?",
+        "WHENRELEASE": "When can I play the game ?",
+        "INSPIRATION": "Inspirations",
+        "CONTENT": {
+            "NEWCONCEPT": "Confined pits a team of well-armed Marines against an almost invisible alien, weak but fast and able to do devastating attacks. The alien must use his environment and his abilities to pick off the Marines one at a time, while the Marines must work as a team to secure the area.",
+            "THETEAM": "What started as a student projet evolved to a bigger project involving over ten people across France. This game is a way for us to get known better on the indie scene.",
+            "WHENRELEASE": "We are very far away from a full release, but are currently completing a pre-alpha we aim to offer for free on our website. It will be available \"when it's done\".",
+            "INSPIRATION": "Our main inspiration is the HL2 mod \"Hidden Source\". Recently some games like Evolve used the asymetrical concept but we feel it is still under represented in modern games"
+        }
+
+    },
     "CONCEPT": {
         "FACTSHEET": "Factsheet",
         "DEVELOPER": "developer",

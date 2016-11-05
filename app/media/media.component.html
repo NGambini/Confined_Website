@@ -12,6 +12,7 @@
                 </a>
         </div>
     </div>
+    </div>
 
     <div class="media-videos">
 
@@ -19,16 +20,20 @@
             {{ 'MEDIA.VIDEOS' | translate }}
         </h3>
         <div class="video-thumbnail" *ngFor="let video of videos;let i = index">
-            <video  [id]="'video_' + i"> 
+            <video (timeupdate)="updateRangePosition(i)" [id]="'video_' + i"> 
                 <source [src]="video.url" type="video/webm"> 
             </video>
-             <div id="video-controls">
-                <button (click)="playPauseVideo(i)" type="button" id="play-pause">Play</button>
-                <input (change)="setPosition(i)" [id]="'video_pos_slider_' + i" type="range" min="0" max="1" step="0.05" id="seek-bar" value="0">
-                <button (click)="toggleMute(i)" type="button" id="mute">Mute</button>
-                <input [id]="'video_sound_slider_' + i" (change)="setVolume(i)" type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
-                <button (click)="toggleFullScreenVideo(i)" type="button" id="full-screen">Full-Screen</button>
+            <img (click)="playPauseVideo(i)" *ngIf="isVideoPaused(i)" style="left:40%;top:30%;display:block;position:absolute;width:120px;height:120px" src="content/images/player/big-play-button.png"/>
+            <img (click)="playPauseVideo(i)" style="width:20px;height:22px;position:absolute;bottom:45px;left:15px;" [attr.src]="isVideoPaused(i) ? 'content/images/player/play.png' : 'content/images/player/pause.png'" />
+            <div style="width:35%;position:absolute;bottom:15px;left:6px;">
+                <img style="display:inline-block;width:25px;height:25px;margin-top:5px;" [attr.src]="isMuted(i) ? 'content/images/player/volume-off.png' : 'content/images/player/volume-on.png'"
+                     (click)="toggleMute(i)" />
+                <input style="display:inline-block" class="volume-slider" [id]="'video_sound_slider_' + i" (change)="setVolume(i)" type="range" id="volume-bar" min="0" max="1" step="0.1" value="0.5">
             </div>
+            
+            <input class="position-slider" (change)="setPosition(i)" [id]="'video_pos_slider_' + i" type="range" min="0" max="1" step="0.05" value="0"/>
+            <img [attr.src]="isFullScreen(i) ? 'content/images/player/full-screen-off.png' : 'content/images/player/full-screen-on.png'"
+                    style="width:22px;height:22px;right:15px;bottom:15px;position:absolute;background-color:transparent;" (click)="toggleFullScreenVideo(i)"/>
         </div>
     </div>
 </div>

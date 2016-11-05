@@ -78,4 +78,27 @@ export class MediaComponent implements OnInit {
 
         nativeElem.currentTime = nativeElem.duration * parseFloat(sliderVal);
     }
+
+    public updateRangePosition(id: number) {
+        let nativeElem = $("#video_" + id).get(0);
+        let slider = $("#video_pos_slider_" + id).get(0);
+
+        slider.value = nativeElem.currentTime / nativeElem.duration;
+    }
+
+    public isVideoPaused(id: number) {
+        let nativeElem = $("#video_" + id).get(0);
+
+        return nativeElem != null && nativeElem !== "undefined" && nativeElem.paused;
+    }
+
+    public isFullScreen(id: number) {
+        return document.fullscreenElement != null;
+    }
+
+    public isMuted(id: number) {
+        let nativeElem = $("#video_" + id).get(0);
+
+        return nativeElem.muted;
+    }
 }
