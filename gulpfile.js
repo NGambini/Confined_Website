@@ -156,7 +156,7 @@ gulp.task('copy:lightbox', function () {
 });
 
 gulp.task('copy:content', function () {
-    return gulp.src(paths.content + "/**/*.{css,js,gif,png,jpg,ttf,otf,ogv}")
+    return gulp.src(paths.content + "/**/*.{css,js,json,gif,png,jpg,ttf,otf,ogv}")
                .pipe(gulp.dest(paths.contentDest));
 });
 

@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, AfterViewInit, ViewChildren, ElementRef } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 import { Languages } from "../common/languages.enum";
 import { NewsModel } from "./news.model";
@@ -10,7 +10,7 @@ declare var __moduleName: string;
     moduleId: __moduleName,
     providers: [NewsServiceMock],
     selector: "news-page",
-    templateUrl: "news.component.html",
+    templateUrl: "news.component.html"
 })
 
 export class NewsComponent implements OnInit {

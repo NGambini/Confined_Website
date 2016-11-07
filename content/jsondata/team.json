@@ -1,0 +1,47 @@
+[
+        {
+            "name": "Noé Gambini",
+            "school": "EPITECH",
+            "jobTitles": ["TEAM.JOBS.LEAD", "TEAM.JOBS.DEV"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": "Développeur passionné de jeu vidéo, Noé a mené l'équipe tout en participant a la programmation du jeu."
+                },
+                {
+                    "locale":"English",
+                    "content": "Developer with a passion for gaming, Noé lead the team while helping with the game programming."
+                }
+            ]
+        },
+        {
+            "name": "Noé Gambini",
+            "school": "EPITECH",
+            "jobTitles": ["TEAM.JOBS.LEAD", "TEAM.JOBS.DEV"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": "Développeur passionné de jeu vidéo, Noé a mené l'équipe tout en participant a la programmation du jeu."
+                },
+                {
+                    "locale":"English",
+                    "content": "Developer with a passion for gaming, Noé lead the team while helping with the game programming."
+                }
+            ]
+        },
+        {
+            "name": "Noé Gambini",
+            "school": "EPITECH",
+            "jobTitles": ["TEAM.JOBS.LEAD", "TEAM.JOBS.DEV"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": "Développeur passionné de jeu vidéo, Noé a mené l'équipe tout en participant a la programmation du jeu."
+                },
+                {
+                    "locale":"English",
+                    "content": "Developer with a passion for gaming, Noé lead the team while helping with the game programming."
+                }
+            ]
+        }
+]

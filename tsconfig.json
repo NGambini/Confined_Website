@@ -19,7 +19,6 @@
     "app/app.routing.ts",
     "app/common/languages.enum.ts",
     "app/concept/concept.component.ts",
-    "app/contact/contact.component.ts",
     "app/home/home.component.ts",
     "app/main-menu/main-menu.component.ts",
     "app/main-menu/page.model.ts",
@@ -32,7 +31,10 @@
     "app/news/news.model.ts",
     "app/news/news.service.mock.ts",
     "app/news/news.service.ts",
-    "app/team/team.component.ts"
+    "app/team/team.component.ts",
+    "app/team/member.model.ts",
+    "app/team/team.service.ts",
+    "app/team/team.service.mock.ts"
   ],
   "exclude": [
     "node_modules",

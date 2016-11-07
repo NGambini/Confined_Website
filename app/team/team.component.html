@@ -1,1 +1,11 @@
-<div>team</div>
+<div class="page">
+    <div class="team-member" *ngFor="let member of members;let isOdd=odd" [ngClass]="{'member-odd': isOdd}" >
+        <span class="member-name"> {{ member.name }} </span>
+        <br>
+        <span class="member-jobs" *ngFor="let job of member.jobTitles;let isLast=last;">
+            {{job| translate }}{{isLast ? '' : ', '}}
+        </span>
+        <br>
+        <span class="member-school"> {{ member.school }} </span>
+    </div>
+</div>
