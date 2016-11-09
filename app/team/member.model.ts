@@ -14,6 +14,7 @@ export class MemberModel {
         public school: string,
         public jobTitles: Array<string>,
         public bios: Array<BioModel>,
+        public picture: string,
         public linkedinUrl: string = null,
         public websiteUrl: string = null) {}
 }

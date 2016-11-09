@@ -27,26 +27,28 @@
                 },
                 {
                     "locale":"English",
-                    "content": "Adrien is a software developper with a passion for game development. He was responsible for most of the game programming"
+                    "content": "Adrien is a software developper with a passion for game development. He was responsible for most of the game programming."
                 }
             ],
+            "picture": "/content/images/team/adrien.png",
             "linkedinUrl": "https://www.linkedin.com/in/adrien-albertini-09792448",
-            "siteUrl": "http://www.adrienalbertini.com"
+            "websiteUrl": "http://www.adrienalbertini.com"
         },
         {
             "name": "Thomas Nabet",
             "school": "EPITECH",
-            "jobTitles": ["TEAM.JOBS.DEV"],
+            "jobTitles": ["TEAM.JOBS.DEV", "TEAM.JOBS.3DARTIST"],
             "bios": [
                 {
                     "locale":"French",
-                    "content": ""
+                    "content": "Thomas a réalisé des développements sur la couche réseau du jeu ainsi que des modèles 3D."
                 },
                 {
                     "locale":"English",
-                    "content": ""
+                    "content": "Thomas buiilt the network layer and some 3D models."
                 }
             ],
+            "picture": "/content/images/team/tom.png",
             "linkedinUrl": "https://www.linkedin.com/in/thomas-nabet-931899100"
         },
         {
@@ -56,13 +58,14 @@
             "bios": [
                 {
                     "locale":"French",
-                    "content": ""
+                    "content": "Paul-Antoine a été responsables de développements sur l'interface utilisateur ainsi que de la réalisation de la première map du jeu."
                 },
                 {
                     "locale":"English",
-                    "content": ""
+                    "content": "Paul-Antoine created the first game map as well as the user interface."
                 }
             ],
+            "picture": "/content/images/team/paulantoine.png",
             "linkedinUrl": "https://fr.linkedin.com/in/paul-antoine-riva-121024b5"
         },
         {
@@ -79,6 +82,7 @@
                     "content": "Edo flies toward all kind of projects for the sake of doing awesome games. For this one, he made the interface, the logo, and the website design."
                 }
             ],
+            "picture": "/content/images/team/edouard.png",
             "linkedinUrl": "https://www.linkedin.com/in/edocle"
         },
         {
@@ -95,6 +99,7 @@
                     "content": "Felix is a french composer and producer. After his film scoring Master at Berklee,  he came back in Paris and started to work on Confined; for which he produced all the music and sound design."
                 }
             ],
+            "picture": "/content/images/team/adrien.png",
             "linkedinUrl": "https://www.linkedin.com/in/f%C3%A9lix-carcone-a99b79ab",
             "siteUrl": "http://felixcarcone.fr/"
         },
@@ -112,6 +117,7 @@
                     "content": "Axel is a 3D and 2D graphist, fond of of video games and animation movies. He was mainly in charge of the final alien design and modelisation."
                 }
             ],
+            "picture": "/content/images/team/axel.png",
             "websiteUrl": "https://www.artstation.com/artist/mxl"
         },
         {
@@ -128,6 +134,7 @@
                     "content": ""
                 }
             ],
+            "picture": "/content/images/team/eric.png",
             "websiteUrl": "https://www.artstation.com/artist/ricko"
         },
         {

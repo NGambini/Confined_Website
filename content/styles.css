@@ -460,3 +460,15 @@ input.volume-slider[type="range"]::-ms-fill-upper {
 .member-name {
     color: #FEFEFE;
 }
+
+.member-odd > .member-image {
+    float:right;
+    margin-left: 20px;
+}
+
+.member-image {
+    float: left;
+    display: block;
+    margin-right: 20px;
+    border: 2px solid white;
+}

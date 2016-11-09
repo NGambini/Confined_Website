@@ -30,7 +30,6 @@ export class TeamComponent implements OnInit {
     }
 
     public isSelectedLanguage(locale: string) {
-        console.log(Languages[this.selectedLanguage]);
         return Languages[this.selectedLanguage] === locale;
     }
 }
