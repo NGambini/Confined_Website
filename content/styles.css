@@ -460,3 +460,13 @@ input.volume-slider[type="range"]::-ms-fill-upper {
 .member-name {
     color: #FEFEFE;
 }
+
+.member-bios {
+    max-width: 400px !important;
+    font-size: small !important;
+    display: inline-block;
+}
+
+.separator {
+    text-align: center;
+}

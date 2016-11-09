@@ -30,7 +30,8 @@ export class TeamComponent implements OnInit {
     }
 
     public isSelectedLanguage(locale: string) {
-        console.log(Languages[this.selectedLanguage]);
-        return Languages[this.selectedLanguage] === locale;
+        if (this._translateService.currentLang == 'en' && locale == 'English' || this._translateService.currentLang == 'fr' && locale == 'French')
+            return true;
+        return false;
     }
 }

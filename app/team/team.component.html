@@ -1,20 +1,23 @@
-<div class="page">
-    <div class="team-member" *ngFor="let member of members;let isOdd=odd" [ngClass]="{'member-odd': isOdd}" >
-        <span class="member-name"> {{ member.name }} </span> 
-        
+<div class="page" style="position:relative">
+        <div class="team-member" *ngFor="let member of members;let isOdd=odd" [ngClass]="{'member-odd': isOdd}" >
+            <span class="member-name"> {{ member.name }} </span> 
+            
+            <br>
+            <span class="member-jobs" *ngFor="let job of member.jobTitles;let isLast=last;">
+                {{ job| translate }}{{isLast ? '' : ', '}}
+            </span>
+            <br>
+            <span class="member-school"> {{ member.school }} </span>
+            <br>
+            <span class="member-bios" *ngFor="let bio of member.bios" >
+                <span [hidden]="!isSelectedLanguage(bio.locale)">
+                    {{ bio.content }}
+                </span> 
+            </span>
+            <br>
+            <a style="color:#ABABAB;top:1px;position: relative;" [hidden]="member.websiteUrl == null" [href]="member.linkedinUrl" class="fa fa-home" ></a>
+            <a style="color:#ABABAB" [hidden]="member.linkedinUrl == null" [href]="member.linkedinUrl" class="fa fa-linkedin" ></a>
         <br>
-        <span class="member-jobs" *ngFor="let job of member.jobTitles;let isLast=last;">
-            {{ job| translate }}{{isLast ? '' : ', '}}
-        </span>
-        <br>
-        <span class="member-school"> {{ member.school }} </span>
-        <br>
-        <span *ngFor="let bio of member.bios" >
-            <span [hidden]="!isSelectedLanguage(bio.locale)">
-                {{ bio.content }}
-            </span> 
-        </span>
-        <a style="color:#ABABAB;top:1px;position: relative;" [hidden]="member.websiteUrl == null" [href]="member.linkedinUrl" class="fa fa-home" ></a>
-        <a style="color:#ABABAB" [hidden]="member.linkedinUrl == null" [href]="member.linkedinUrl" class="fa fa-linkedin" ></a>
-    </div>
+        <div class="separator">____</div>
+        </div>
 </div>
