@@ -9,13 +9,11 @@ export class BioModel {
 }
 
 export class MemberModel {
-    constructor (
+    public constructor (
         public name: string,
         public school: string,
         public jobTitles: Array<string>,
-        public bios: Array<BioModel>) {}
-
-    public getTranslation(lang: Languages): BioModel {
-        return _.find(this.bios, { locale: lang });
-    }
+        public bios: Array<BioModel>,
+        public linkedinUrl: string = null,
+        public websiteUrl: string = null) {}
 }

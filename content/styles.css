@@ -448,6 +448,11 @@ input.volume-slider[type="range"]::-ms-fill-upper {
     text-align: right;
 }
 
+.member-odd > .fa {
+    position: relative;
+    right: 4px;
+}
+
 .member-jobs {
     color: #DDDDDD;
 }

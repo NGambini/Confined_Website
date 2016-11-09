@@ -12,36 +12,155 @@
                     "locale":"English",
                     "content": "Developer with a passion for gaming, Noé lead the team while helping with the game programming."
                 }
-            ]
+            ],
+            "linkedinUrl": "https://www.linkedin.com/in/ngambini",
+            "websiteUrl": "http://noegambini.com/"
         },
         {
-            "name": "Noé Gambini",
+            "name": "Adrien Albertini",
             "school": "EPITECH",
-            "jobTitles": ["TEAM.JOBS.LEAD", "TEAM.JOBS.DEV"],
+            "jobTitles": ["TEAM.JOBS.DEV"],
             "bios": [
                 {
                     "locale":"French",
-                    "content": "Développeur passionné de jeu vidéo, Noé a mené l'équipe tout en participant a la programmation du jeu."
+                    "content": "Adrien est un développeur avec une passion pour la création de jeux. Il a été responsable de la plus grande partie du code du jeu."
                 },
                 {
                     "locale":"English",
-                    "content": "Developer with a passion for gaming, Noé lead the team while helping with the game programming."
+                    "content": "Adrien is a software developper with a passion for game development. He was responsible for most of the game programming"
                 }
-            ]
+            ],
+            "linkedinUrl": "https://www.linkedin.com/in/adrien-albertini-09792448",
+            "siteUrl": "http://www.adrienalbertini.com"
         },
         {
-            "name": "Noé Gambini",
+            "name": "Thomas Nabet",
             "school": "EPITECH",
-            "jobTitles": ["TEAM.JOBS.LEAD", "TEAM.JOBS.DEV"],
+            "jobTitles": ["TEAM.JOBS.DEV"],
             "bios": [
                 {
                     "locale":"French",
-                    "content": "Développeur passionné de jeu vidéo, Noé a mené l'équipe tout en participant a la programmation du jeu."
+                    "content": ""
                 },
                 {
                     "locale":"English",
-                    "content": "Developer with a passion for gaming, Noé lead the team while helping with the game programming."
+                    "content": ""
                 }
-            ]
+            ],
+            "linkedinUrl": "https://www.linkedin.com/in/thomas-nabet-931899100"
+        },
+        {
+            "name": "Paul-Antoine Riva",
+            "school": "EPITECH",
+            "jobTitles": ["TEAM.JOBS.DEV", "TEAM.JOBS.LEVELDESIGNER"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": ""
+                },
+                {
+                    "locale":"English",
+                    "content": ""
+                }
+            ],
+            "linkedinUrl": "https://fr.linkedin.com/in/paul-antoine-riva-121024b5"
+        },
+        {
+            "name": "Édouard Clerc",
+            "school": "E-ARTSUP",
+            "jobTitles": ["TEAM.JOBS.2DARTIST", "TEAM.JOBS.WEBDESIGNER"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": "Edo voyage de projets en projets pour contribuer au monde des jeux. Pour celui-ci, Edo a réalisé l'interface, le logo, et le design du site."
+                },
+                {
+                    "locale":"English",
+                    "content": "Edo flies toward all kind of projects for the sake of doing awesome games. For this one, he made the interface, the logo, and the website design."
+                }
+            ],
+            "linkedinUrl": "https://www.linkedin.com/in/edocle"
+        },
+        {
+            "name": "Félix Carcone",
+            "school": "Berklee",
+            "jobTitles": ["TEAM.JOBS.COMPOSER"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": "Félix est un compositeur et producteur français. Après son master à Berklee, il est venu a Paris et a travaillé sur Confined, pour lequel il a produit toutes les musiques et le sound design."
+                },
+                {
+                    "locale":"English",
+                    "content": "Felix is a french composer and producer. After his film scoring Master at Berklee,  he came back in Paris and started to work on Confined; for which he produced all the music and sound design."
+                }
+            ],
+            "linkedinUrl": "https://www.linkedin.com/in/f%C3%A9lix-carcone-a99b79ab",
+            "siteUrl": "http://felixcarcone.fr/"
+        },
+        {
+            "name": "Axel Jacquemet",
+            "school": "ARIES",
+            "jobTitles": ["TEAM.JOBS.3DARTIST"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": "Axel est un graphiste 2D/3D, passionné de jeux vidéos et de films d'animation. Il s'est occupé principalement de la version finale du design de l'alien et de sa modélisation."
+                },
+                {
+                    "locale":"English",
+                    "content": "Axel is a 3D and 2D graphist, fond of of video games and animation movies. He was mainly in charge of the final alien design and modelisation."
+                }
+            ],
+            "websiteUrl": "https://www.artstation.com/artist/mxl"
+        },
+        {
+            "name": "Erik Campeaux",
+            "school": "ARIES",
+            "jobTitles": ["TEAM.JOBS.ANIM"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": ""
+                },
+                {
+                    "locale":"English",
+                    "content": ""
+                }
+            ],
+            "websiteUrl": "https://www.artstation.com/artist/ricko"
+        },
+        {
+            "name": "Aimé Juvin",
+            "school": "ARIES",
+            "jobTitles": ["TEAM.JOBS.LEADART"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": "Axel est un graphiste 2D/3D, passionné de jeux vidéos et de films d'animation. Il s'est occupé principalement de la version finale du design de l'alien et de sa modélisation."
+                },
+                {
+                    "locale":"English",
+                    "content": "Axel is a 3D and 2D graphist, fond of of video games and animation movies. He was mainly in charge of the final alien design and modelisation."
+                }
+            ],
+            "websiteUrl": "https://ajuvin.artstation.com/"
+        },
+        {
+            "name": "Agathe Girard",
+            "school": "ARIES",
+            "jobTitles": ["TEAM.JOBS.3DARTIST", "TEAM.JOBS.TEXTURING"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": ""
+                },
+                {
+                    "locale":"English",
+                    "content": ""
+                }
+            ],
+            "websiteUrl": "https://www.artstation.com/artist/zaggirard"
         }
+
 ]

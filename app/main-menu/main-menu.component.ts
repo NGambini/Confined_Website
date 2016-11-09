@@ -42,7 +42,7 @@ export class MainMenuComponent implements OnInit {
     domainCenter = "confined-game",
     domainExtension = "com";
 
-    return 'mailto:' + name + '@' + domainCenter + '.' + domainExtension;
+    return "mailto:" + name + "@" + domainCenter + "." + domainExtension;
   }
 
   public get menuIcon(): string {

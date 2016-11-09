@@ -63,11 +63,16 @@
     "TEAM": {
         "JOBS": {
             "LEAD": "Project leader",
-            "DEV": "Software developer",
+            "DEV": "Developer",
             "ANIM": "Animator",
             "3DARTIST": "3D Artist",
             "2DARTIST": "2D Artist",
-            "COMPOSER": "Composer"
+            "WEBDESIGNER": "Web designer",
+            "COMPOSER": "Composer",
+            "CONCEPTDESIGNER": "Concept Designer",
+            "LEADART": "Lead artist",
+            "TEXTURING": "Texturing",
+            "LEVELDESIGNER": "Level designer"
         }
     }
 }

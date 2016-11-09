@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
+import { TranslateService } from "ng2-translate/ng2-translate";
 
 import { Languages } from "../common/languages.enum";
 import { MemberModel } from "./member.model";
@@ -17,12 +18,19 @@ export class TeamComponent implements OnInit {
     @Input()
     private selectedLanguage: Languages;
     private members: Array<MemberModel>;
-    constructor(private _teamService: TeamServiceMock) {}
+    constructor(
+        private _translateService: TranslateService,
+        private _teamService: TeamServiceMock) {}
 
     public ngOnInit() {
         this.selectedLanguage = Languages.English;
         this._teamService.getMembers().subscribe(members => this.members = members,
                                               error => { console.log(error); },
                                               () => undefined);
+    }
+
+    public isSelectedLanguage(locale: string) {
+        console.log(Languages[this.selectedLanguage]);
+        return Languages[this.selectedLanguage] === locale;
     }
 }

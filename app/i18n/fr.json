@@ -1,10 +1,10 @@
 {
     "MENU":{
         "HOME": "Home",
-        "NEWS": "Actus",
+        "NEWS": "News",
         "CONCEPT": "Concept",
         "MEDIA": "Media",
-        "TEAM": "L'équipe",
+        "TEAM": "Equipe",
         "CONTACT": "Contact",
         "DOWNLOAD": "Last version download",
         "FORWINDOWS": "For Windows"
@@ -12,6 +12,20 @@
     "NEWS": {
         "POSTEDON": "posted on ",
         "IN": "in"
+    },
+    "HOME": {
+        "INTRODUCTION": "A asymetrical multiplayer shooter set in a futuristic and spooky environnment",
+        "NEWCONCEPT": "Original Gameplay",
+        "THETEAM": "Who are we ?",
+        "WHENRELEASE": "When can I play the game ?",
+        "INSPIRATION": "Inspirations",
+        "CONTENT": {
+            "NEWCONCEPT": "Confined pits a team of well-armed Marines against an almost invisible alien, weak but fast and able to do devastating attacks. The alien must use his environment and his abilities to pick off the Marines one at a time, while the Marines must work as a team to secure the area.",
+            "THETEAM": "What started as a student project evolved to a bigger project involving over ten people across France. This game is a way for us to get known better on the indie scene and challenge our programming, art and leadership skills. Find out more about us in \"The Team\" page",
+            "WHENRELEASE": "We are very far away from a full release, but are currently completing a pre-alpha we aim to offer for free on our website. It will be available \"when it's done\".",
+            "INSPIRATION": "Our main inspiration is the HL2 mod \"Hidden Source\". Recently some games like Evolve used the asymetrical concept but we feel it is still under represented in modern games"
+        }
+
     },
     "CONCEPT": {
         "FACTSHEET": "Factsheet",
@@ -23,18 +37,42 @@
         "DESCRIPTION": "Description",
         "HISTORY": "History",
         "FEATURES": "Features",
+        "THETEAMS": "The teams",
+        "REALPCGAME": "A real PC game",
         "CONTENT": {
-            "DESCRIPTION": "Cillum do aliqua do laboris sunt qui exercitation sunt exercitation tempor occaecat cillum non nostrud.",
-            "HISTORY": "Cillum do aliqua do laboris sunt qui exercitation sunt exercitation tempor occaecat cillum non nostrud.",
-            "FEATURES": "Cillum do aliqua do laboris sunt qui exercitation sunt exercitation tempor occaecat cillum non nostrud.",
+            "DESCRIPTION": "Confined pits a team of well-armed Marines against an almost invisible alien, weak but fast and able to do devastating attacks. The alien must use his environment and his abilities to pick off the Marines one at a time, while the Marines must work as a team to secure the area.\n",
+            "FEATURES": {
+                "ASYMETRIC": "A asymetric game with two unique gameplays",
+                "THRILL": "A thrilling game where you can only hunt or be hunted. Always be on your toes to survive",
+                "WEAPONSGADGETS": "Strong arsenal : play with 3 futuristic weapons and equipment including night vision",
+                "ABILITIES": "Unique Alien abilities : view through walls, eat corpses, wall grab, pounce...",
+                "MUSIC": "Unique Soundrack by Félix Carcone, that changes based on the events in the game"
+            },
+            "THETEAMS": "Fight either as a marine or the alien. \n Marines use strong weaponry, night vision, flashlights and teamplay to take control of the area. \n The alien must sneak around, use level verticality and hide until he is able to isolate a victim.",
             "PLATFORM": "Windows",
             "RELEASEDATE": "2017",
-            "PRICE": "free",
-            "DEVELOPER": "K.E.K."
+            "PRICE": "free during alpha",
+            "DEVELOPER": "Confined Team",
+            "REALPCGAME": "Confined is a real PC game made by PC gamers. Video options, dedicated servers, server browser, server rcon administration : we have it all."
         }
     },
     "MEDIA": {
         "SCREENS": "Screenshots",
         "VIDEOS": "Videos"
+    },
+    "TEAM": {
+        "JOBS": {
+            "LEAD": "Chef d'équipe",
+            "DEV": "Developer",
+            "ANIM": "Animator",
+            "3DARTIST": "3D Artist",
+            "2DARTIST": "2D Artist",
+            "WEBDESIGNER": "Web designer",
+            "COMPOSER": "Composer",
+            "CONCEPTDESIGNER": "Concept Designer",
+            "LEADART": "Lead artist",
+            "TEXTURING": "Texturing",
+            "LEVELDESIGNER": "Level designer"
+        }
     }
 }
