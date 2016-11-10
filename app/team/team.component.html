@@ -1,25 +1,27 @@
 <div class="page">
-    <div class="team-member" *ngFor="let member of members;let isOdd=odd" [ngClass]="{'member-odd': isOdd}" >
-        <img [hidden]="!member.picture" class="member-image" [attr.src]="member.picture">
-        <span class="member-name"> {{ member.name }} </span> 
-        &nbsp;
-        <a style="color:#ABABAB;top:1px;position: relative;" [hidden]="member.websiteUrl == null" [href]="member.websiteUrl" class="fa fa-home" ></a>
-        <a style="color:#ABABAB" [hidden]="member.linkedinUrl == null" [href]="member.linkedinUrl" class="fa fa-linkedin" ></a>
-        <br>
-        <br>
-        <span class="member-jobs" *ngFor="let job of member.jobTitles;let isLast=last;">
-            {{ job| translate }}{{isLast ? '' : ', '}}
-        </span>
-        <br>
-        <span class="member-school"> {{ member.school }} </span>
-        <br>
-        <span *ngFor="let bio of member.bios" >
-            <span [hidden]="!isSelectedLanguage(bio.locale)">
-                {{ bio.content }}
-            </span> 
-        </span>
-        <br>
-        <br>
-        <br>
+    <div class="" *ngFor="let member of members;let isOdd=odd">
+        <div class="team-member"  [ngClass]="{'member-odd': isOdd}">
+            <img [hidden]="!member.picture" class="member-image" [attr.src]="member.picture">
+            <span class="member-name"> {{ member.name }} </span> 
+            &nbsp;
+            <a style="color:#ABABAB;top:1px;position: relative;" [hidden]="member.websiteUrl == null" [href]="member.websiteUrl" class="fa fa-home" ></a>
+            <a style="color:#ABABAB" [hidden]="member.linkedinUrl == null" [href]="member.linkedinUrl" class="fa fa-linkedin" ></a>
+            <br>
+            <br>
+            <span class="member-jobs" *ngFor="let job of member.jobTitles;let isLast=last;">
+                {{ job| translate }}{{isLast ? '' : ', '}}
+            </span>
+            <br>
+            <span class="member-school"> {{ member.school }} </span>
+            <br>
+            <span *ngFor="let bio of member.bios" >
+                <span [hidden]="!isSelectedLanguage(bio.locale)">
+                    {{ bio.content }}
+                </span> 
+            </span>
+            <br>
+            <br>
+            <!--<div class="separator">____</div>-->
+        </div>
+
     </div>
-</div>

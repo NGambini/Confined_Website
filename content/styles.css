@@ -461,6 +461,7 @@ input.volume-slider[type="range"]::-ms-fill-upper {
     color: #FEFEFE;
 }
 
+
 .member-odd > .member-image {
     float:right;
     margin-left: 20px;
@@ -471,4 +472,14 @@ input.volume-slider[type="range"]::-ms-fill-upper {
     display: block;
     margin-right: 20px;
     border: 2px solid white;
+}
+
+.member-bios {
+    max-width: 400px !important;
+    font-size: small !important;
+    display: inline-block;
+}
+
+.separator {
+    text-align: center;
 }
