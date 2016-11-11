@@ -1,78 +1,78 @@
 {
     "MENU":{
-        "HOME": "Home",
-        "NEWS": "News",
+        "HOME": "Accueil",
+        "NEWS": "Actualités",
         "CONCEPT": "Concept",
-        "MEDIA": "Media",
-        "TEAM": "Equipe",
+        "MEDIA": "Médias",
+        "TEAM": "Équipe",
         "CONTACT": "Contact",
-        "DOWNLOAD": "Last version download",
-        "FORWINDOWS": "For Windows"
+        "DOWNLOAD": "Télécharger la dernière version",
+        "FORWINDOWS": "Windows uniquement"
     },
     "NEWS": {
-        "POSTEDON": "posted on ",
-        "IN": "in"
+        "POSTEDON": "posté le ",
+        "IN": "dans"
     },
     "HOME": {
-        "INTRODUCTION": "A asymetrical multiplayer shooter set in a futuristic and spooky environnment",
-        "NEWCONCEPT": "Original Gameplay",
-        "THETEAM": "Who are we ?",
-        "WHENRELEASE": "When can I play the game ?",
+        "INTRODUCTION": "Confined est un jeu de tir multijoueur asymétrique prenant place dans un univers futuriste horifique",
+        "NEWCONCEPT": "Un concept original",
+        "THETEAM": "Qui sommes-nous ?",
+        "WHENRELEASE": "Quand pourrais-je jouer au jeu ?",
         "INSPIRATION": "Inspirations",
         "CONTENT": {
-            "NEWCONCEPT": "Confined pits a team of well-armed Marines against an almost invisible alien, weak but fast and able to do devastating attacks. The alien must use his environment and his abilities to pick off the Marines one at a time, while the Marines must work as a team to secure the area.",
-            "THETEAM": "What started as a student project evolved to a bigger project involving over ten people across France. This game is a way for us to get known better on the indie scene and challenge our programming, art and leadership skills. Find out more about us in \"The Team\" page",
-            "WHENRELEASE": "We are very far away from a full release, but are currently completing a pre-alpha we aim to offer for free on our website. It will be available \"when it's done\".",
-            "INSPIRATION": "Our main inspiration is the HL2 mod \"Hidden Source\". Recently some games like Evolve used the asymetrical concept but we feel it is still under represented in modern games"
+            "NEWCONCEPT": "Confined oppose une équipe de Marines suréquipés contre un alien presque invisible, fragile mais rapide et possédant des attaques dévastatrices. L'alien doit utiliser ses compétences et son environnement pour éliminer les Marines isolés, pendant que les Marines doivent travailler en équipe afin de sécuriser la zone.",
+            "THETEAM": "Ce qui a débuté comme un projet étudiant est devenu un projet ambitieux réunissant plus d'une dizaine de personnes à travers la France. Développer ce jeu nous permet d'améliorer notre visibilité sur la scène indépendante et représente en même temps un défi tant en programmation qu'en art ou en organisation et gestion d'équipe. Découvrez-en plus sur nous à la page \"L'équipe\"",
+            "WHENRELEASE": "Nous sommes encore loin de pouvoir proposer une version complète, mais nous travaillons sur une version pre-alpha que nous souhaitons proposer en téléchargement gratuit sur notre site. Cette version sera disponible \"quand elle sera prête\".",
+            "INSPIRATION": "Notre principale source d'inspiration est le mod d'Half-Life 2 \"Hidden Source\". Récemment, certains jeux comme Evolve proposent un système de jeu asymétrique mais nous pensons que ce système reste trop peu utilisé dans les jeux modernes"
         }
 
     },
     "CONCEPT": {
-        "FACTSHEET": "Factsheet",
-        "DEVELOPER": "developer",
-        "PLATFORM": "platform",
-        "RELEASEDATE": "release date",
-        "PRICE": "price",
+        "FACTSHEET": "Fiche descriptive",
+        "DEVELOPER": "développeur",
+        "PLATFORM": "plateforme",
+        "RELEASEDATE": "date de sortie",
+        "PRICE": "prix",
         "LICENSE": "license",
         "DESCRIPTION": "Description",
-        "HISTORY": "History",
-        "FEATURES": "Features",
-        "THETEAMS": "The teams",
-        "REALPCGAME": "A real PC game",
+        "HISTORY": "Histoire",
+        "FEATURES": "Fonctionnalités",
+        "THETEAMS": "Les équipes",
+        "REALPCGAME": "Un jeu pensé pour le PC",
         "CONTENT": {
-            "DESCRIPTION": "Confined pits a team of well-armed Marines against an almost invisible alien, weak but fast and able to do devastating attacks. The alien must use his environment and his abilities to pick off the Marines one at a time, while the Marines must work as a team to secure the area.\n",
+            "DESCRIPTION": "Confined oppose une équipe de Marines suréquipés contre un alien presque invisible, fragile mais rapide et possédant des attaques dévastatrices. L'alien doit utiliser ses compétences et son environnement pour éliminer les Marines isolés, pendant que les Marines doivent travailler en équipe afin de sécuriser la zone.\n",
             "FEATURES": {
-                "ASYMETRIC": "A asymetric game with two unique gameplays",
-                "THRILL": "A thrilling game where you can only hunt or be hunted. Always be on your toes to survive",
-                "WEAPONSGADGETS": "Strong arsenal : play with 3 futuristic weapons and equipment including night vision",
-                "ABILITIES": "Unique Alien abilities : view through walls, eat corpses, wall grab, pounce...",
-                "MUSIC": "Unique Soundrack by Félix Carcone, that changes based on the events in the game"
+                "ASYMETRIC": "Un jeu asymétrique avec deux gameplays uniques.",
+                "THRILL": "Un jeu saisissant où vous pouvez basculer entre chasseur et proie en un instant. Soyez toujours sur vos gardes pour survivre.",
+                "WEAPONSGADGETS": "Un arsenale complet : jouez avec 3 armes et des équipement futuristes dont la vision nocturne",
+                "ABILITIES": "Un alien aux compétences uniques qui peu : voir à travers les murs, s'accrocher aux murs, se propulser...",
+                "MUSIC": "Bande son originale de Félix Carcone, s'adaptant à la situation en jeu"
             },
-            "THETEAMS": "Fight either as a marine or the alien. \n Marines use strong weaponry, night vision, flashlights and teamplay to take control of the area. \n The alien must sneak around, use level verticality and hide until he is able to isolate a victim.",
+            "THETEAMS": "Combattez en tant qu'alien ou marine. \n Les Marines possèdent des armes puissantes, des visions noctures, des lampes torches et doivent travailler en équipe afin de sécuriser la zone. \n L'alien doit se déplacer discrètement, utiliser la verticalité de l'environnement et se cacher afin de pouvoir isoler et éliminer ses victimes.",
             "PLATFORM": "Windows",
             "RELEASEDATE": "2017",
-            "PRICE": "free during alpha",
+            "PRICE": "PRE-Alpha disponible gratuitement",
             "DEVELOPER": "Confined Team",
-            "REALPCGAME": "Confined is a real PC game made by PC gamers. Video options, dedicated servers, server browser, server rcon administration : we have it all."
+            "REALPCGAME": "Confined est un jeu pour PC créé par des joueurs PC. Options vidéo, serveurs dédiés, navigateur de serveurs, commandes d'administration rcon : tout est là."
         }
     },
     "MEDIA": {
-        "SCREENS": "Screenshots",
-        "VIDEOS": "Videos"
+        "SCREENS": "Captures d'écran",
+        "VIDEOS": "Vidéos"
     },
     "TEAM": {
         "JOBS": {
             "LEAD": "Chef d'équipe",
-            "DEV": "Developer",
-            "ANIM": "Animator",
-            "3DARTIST": "3D Artist",
-            "2DARTIST": "2D Artist",
-            "WEBDESIGNER": "Web designer",
-            "COMPOSER": "Composer",
+            "DEV": "Programmeur",
+            "ANIM": "Animateur",
+            "3DARTIST": "Artiste 3D",
+            "2DARTIST": "Artiste 2D",
+            "WEBDESIGNER": "Concepteur Web",
+            "COMPOSER": "Compositeur",
             "CONCEPTDESIGNER": "Concept Designer",
-            "LEADART": "Lead artist",
-            "TEXTURING": "Texturing",
-            "LEVELDESIGNER": "Level designer"
+            "LEADART": "Chef artiste",
+            "TEXTURING": "Artiste textures",
+            "LEVELDESIGNER": "Concepteur niveaux"
         }
     }
 }
