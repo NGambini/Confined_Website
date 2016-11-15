@@ -3,13 +3,13 @@
         <div class="news-header">
             <div class="black-box hidden-xs-down"></div>
             <div class="title-text">
-                <h3 class="news-title">{{ article.getTranslation(selectedLanguage).title }}</h3>
-                <h4 class="news-subtitle">posted on XXXXXX in <span class="news-category">category</span>
+                <h3 *ngFor="let translation of article.translations" [hidden]="!isSelectedLanguage(translation.locale)" class="news-title">{{ translation.title }}</h3>
+                <h4 class="news-subtitle">{{ 'NEWS.POSTEDON' | translate }} {{ article.date }} {{ 'NEWS.IN' | translate }} <span class="news-category">category</span>
                 </h4>
             </div>
         </div>
         
-        <div>{{ article.getTranslation(selectedLanguage).content }}</div>
+        <div *ngFor="let translation of article.translations" [hidden]="!isSelectedLanguage(translation.locale)">{{ translation.content }}</div>
         <div style="text-align:center">
             <a class="news-thumbnail" *ngFor="let image of article.imagesUrl" [attr.href]="image.url"
             [attr.data-lightbox]="news-index" [attr.data-title]="image.title">

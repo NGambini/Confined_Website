@@ -23,17 +23,17 @@ export class MediaComponent implements OnInit {
     constructor(private _mediaService: MediaServiceMock) {}
 
     public ngOnInit() {
-        this._mediaService.getNews().subscribe(medias => this.medias = medias,
+        this._mediaService.getMedias().subscribe(medias => this.medias = medias,
                                                     error => { console.log(error); },
                                                     () => undefined);
     }
 
     public get screenshots(): Array<MediaModel> {
-        return _.filter(this.medias, function(m)  { return m.isVideo === false; });
+        return _.filter(this.medias, function(m)  { return m.isVideo == false; });
     }
 
     public get videos(): Array<MediaModel> {
-        return _.filter(this.medias, function(m)  { return m.isVideo === true; });
+        return _.filter(this.medias, function(m)  { return m.isVideo == true; });
     }
 
     public playPauseVideo(id: number) {

@@ -4,7 +4,7 @@ import { Languages } from "../common/languages.enum";
 
 export class NewsTranslationModel {
     public constructor(
-        public locale: Languages,
+        public locale: string,
         public title: string,
         public content: string) {}
 }

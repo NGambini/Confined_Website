@@ -6,15 +6,15 @@
 
         <div class="container">
             <div class="screen-row row">
-                <a class="screen-item col-xs-12 col-md-6 col-lg-4" *ngFor="let screen of screenshots" [attr.href]="screen.url"
+                <a class="screen-item col-xs-12 col-md-6 col-lg-4" *ngFor="let screen of medias" [hidden]="screen.isVideo == true" [attr.href]="screen.url"
                             [attr.data-lightbox]="news-index" [attr.data-title]="screen.title">
-                                <img [attr.src]="'http://placehold.it/275x145'" alt="">
+                                <img [attr.src]="screen.thumbUrl" alt="">
                 </a>
         </div>
     </div>
     </div>
 
-    <div class="media-videos">
+    <!--<div class="media-videos">
 
         <h3 class="media-title">
             {{ 'MEDIA.VIDEOS' | translate }}
@@ -35,5 +35,5 @@
             <img [attr.src]="isFullScreen(i) ? 'content/images/player/full-screen-off.png' : 'content/images/player/full-screen-on.png'"
                     style="width:22px;height:22px;right:15px;bottom:15px;position:absolute;background-color:transparent;" (click)="toggleFullScreenVideo(i)"/>
         </div>
-    </div>
+    </div>-->
 </div>

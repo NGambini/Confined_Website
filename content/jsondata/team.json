@@ -13,6 +13,7 @@
                     "content": "Developer with a passion for gaming, Noé lead the team while helping with the game programming."
                 }
             ],
+            "picture": "/content/images/team/shyperson.png",
             "linkedinUrl": "https://www.linkedin.com/in/ngambini",
             "websiteUrl": "http://noegambini.com/"
         },
@@ -45,7 +46,7 @@
                 },
                 {
                     "locale":"English",
-                    "content": "Thomas buiilt the network layer and some 3D models."
+                    "content": "Thomas built the network layer and some 3D models."
                 }
             ],
             "picture": "/content/images/team/tom.png",
@@ -104,6 +105,42 @@
             "websiteUrl": "http://felixcarcone.fr/"
         },
         {
+            "name": "Benjamin Hirschfield",
+            "school": "EPITECH",
+            "jobTitles": ["TEAM.JOBS.DEV", "TEAM.JOBS.LEVELDESIGNER"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": "Passionné par la programmation et de jeux vidéos, Benjamin a participer à la mise en ligne du premier site et à du mapping."
+                },
+                {
+                    "locale":"English",
+                    "content": "Passionate about programming and video games, Benjamin has worked on the first version of the web site and did some mapping."
+                }
+            ],
+            "picture": "/content/images/team/shyperson.png",
+            "linkedinUrl": "https://linkedin.com/in/benjamin-hirschfield-57b011132",
+            "websiteUrl": "https://hirschfieldbenjamin.wordpress.com/"
+        },
+        {
+            "name": "Karel Font",
+            "school": "EPITECH",
+            "jobTitles": ["TEAM.JOBS.2DARTIST"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": "Karel est étudiant en développement, et possède des connaissances en design. Il s'est chargé des premiers dessins pour les armes, et autres."
+                },
+                {
+                    "locale":"English",
+                    "content": "Karel is a student in software engineering with knowledge in graphic designs. He did the initial art on the weapons and such."
+                }
+            ],
+            "picture": "/content/images/team/karel.png",
+            "linkedinUrl": "https://linkedin.com/in/benjamin-hirschfield-57b011132",
+            "websiteUrl": "https://hirschfieldbenjamin.wordpress.com/"
+        },
+        {
             "name": "Axel Jacquemet",
             "school": "ARIES",
             "jobTitles": ["TEAM.JOBS.3DARTIST"],
@@ -127,15 +164,16 @@
             "bios": [
                 {
                     "locale":"French",
-                    "content": ""
+                    "content": "Erik est un modeleur et animateur 3D fasciné par les jeux vidéos. Pour ce projet, il a été responsable des animations TPS de l'alien."
                 },
                 {
                     "locale":"English",
-                    "content": ""
+                    "content": "Erik is a 3D modeler and animator fascinated by video games. he was in charge for the TPS animations of the Alien model on this game."
                 }
             ],
             "picture": "/content/images/team/eric.png",
-            "websiteUrl": "https://www.artstation.com/artist/ricko"
+            "websiteUrl": "https://www.artstation.com/artist/ricko",
+            "linkedinUrl": "https://fr.linkedin.com/in/erik-campeaux-870453104/fr"
         },
         {
             "name": "Aimé Juvin",
@@ -151,6 +189,7 @@
                     "content": "Axel is a 3D and 2D graphist, fond of of video games and animation movies. He was mainly in charge of the final alien design and modelisation."
                 }
             ],
+            "picture": "/content/images/team/shyperson.png",
             "websiteUrl": "https://ajuvin.artstation.com/"
         },
         {
@@ -160,13 +199,14 @@
             "bios": [
                 {
                     "locale":"French",
-                    "content": ""
+                    "content": "Agathe est étudiante en dernière année de Bachelor conception 3D/VFX,  et ses domaines favoris sont le texturing, le lighting, le compositing et le concept art. Elle a été responsable du détails du sculpt et de la texture des bras de l'Alien."
                 },
                 {
                     "locale":"English",
-                    "content": ""
+                    "content": "Agathe is a student currently earning my BA in 3D Conception & VFX, and her favourite areas are texturing, lighting, compositing and concept art. She was responsible of the sculpt details and the texturing of the Alien arms."
                 }
             ],
+            "picture": "/content/images/team/agathe.png",
             "websiteUrl": "https://www.artstation.com/artist/zaggirard"
         }
 

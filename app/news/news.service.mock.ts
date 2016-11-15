@@ -1,4 +1,7 @@
 import { Observable } from "rxjs/Observable";
+import { Http } from "@angular/http";
+import { Inject, Injectable } from "@angular/core";
+
 import "rxjs/add/observable/of";
 
 import { Languages } from "../common/languages.enum";
@@ -6,51 +9,10 @@ import { NewsService } from "./news.service";
 import { NewsTranslationModel, NewsModel, ImageModel } from "./news.model";
 
 export class NewsServiceMock implements NewsService {
-    private static mockedNews: Array<NewsModel> = [
-        new NewsModel(1, "31/01/01", "artworks", [
-            new NewsTranslationModel(
-            Languages.English,
-            "English Title",
-            `ENGLISH Laborum ut duis eu sunt amet ad officia.
-            Irure ex inlaboris laborum anim sint ullamco laboris nostrud ea.
-            Sint excepteur ad ipsum Lorem deserunt incididunt mollit velit officia velit enim.`),
-            new NewsTranslationModel(
-            Languages.French,
-            "French Title",
-            `FRENCH Laborum ut duis eu sunt amet ad officia.
-            Irure ex inlaboris laborum anim sint ullamco laboris nostrud ea.
-            Sint excepteur ad ipsum Lorem deserunt incididunt mollit velit officia velit enim.`),
-        ],
-        [
-            new ImageModel(
-                "typical cat picture",
-                "content/images/news/dumb_cat.jpg",
-                "content/images/news/dumb_cat_thumb.jpg"
-            ),
-            new ImageModel(
-                "typical cat picture",
-                "content/images/news/dumb_cat.jpg",
-                "content/images/news/dumb_cat_thumb.jpg"
-            )
-        ]),
-        new NewsModel(2, "02/03/01", "anouncement", [
-            new NewsTranslationModel(
-            Languages.English,
-            "English Title - news 2",
-            `ENGLISH Laborum ut duis eu sunt amet ad officia.
-            Irure ex inlaboris laborum anim sint ullamco laboris nostrud ea.
-            Sint excepteur ad ipsum Lorem deserunt incididunt mollit velit officia velit enim.`),
-            new NewsTranslationModel(
-            Languages.French,
-            "French Title - news 2",
-            `FRENCH Laborum ut duis eu sunt amet ad officia.
-            Irure ex inlaboris laborum anim sint ullamco laboris nostrud ea.
-            Sint excepteur ad ipsum Lorem deserunt incididunt mollit velit officia velit enim.`),
-        ], [])];
-
-
+    constructor(@Inject(Http) private http: Http) { }
 
     public getNews(): Observable<Array<NewsModel>> {
-        return Observable.of(NewsServiceMock.mockedNews);
+        return this.http.request("content/jsondata/news.json")
+                 .map(res => res.json());
     }
 }

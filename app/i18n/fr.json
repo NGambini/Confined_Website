@@ -1,7 +1,7 @@
 {
     "MENU":{
         "HOME": "Accueil",
-        "NEWS": "Actualités",
+        "NEWS": "Actu",
         "CONCEPT": "Concept",
         "MEDIA": "Médias",
         "TEAM": "Équipe",
@@ -57,7 +57,7 @@
         }
     },
     "MEDIA": {
-        "SCREENS": "Captures d'écran",
+        "SCREENS": "Images",
         "VIDEOS": "Vidéos"
     },
     "TEAM": {

@@ -1,0 +1,56 @@
+[
+    {
+        "title": "picture 1",
+        "url": "content/images/media/images/1.png",
+        "thumbUrl": "content/images/media/images/1_thumb.png",
+        "isVideo": "false"
+    },
+    {
+        "title": "picture 2",
+        "url": "/content/images/media/images/2.png",
+        "thumbUrl": "/content/images/media/images/2_thumb.png",
+        "isVideo": "false"
+    },
+    {
+        "title": "picture 3",
+        "url": "/content/images/media/images/3.png",
+        "thumbUrl": "/content/images/media/images/3_thumb.png",
+        "isVideo": "false"
+    },
+    {
+        "title": "picture 4",
+        "url": "/content/images/media/images/4.png",
+        "thumbUrl": "/content/images/media/images/4_thumb.png",
+        "isVideo": "false"
+    },
+    {
+        "title": "picture 5",
+        "url": "/content/images/media/images/5.png",
+        "thumbUrl": "/content/images/media/images/5_thumb.png",
+        "isVideo": "false"
+    },
+    {
+        "title": "picture 6",
+        "url": "/content/images/media/images/6.png",
+        "thumbUrl": "/content/images/media/images/6_thumb.png",
+        "isVideo": "false"
+    },
+    {
+        "title": "picture 7",
+        "url": "/content/images/media/images/7.png",
+        "thumbUrl": "/content/images/media/images/7_thumb.png",
+        "isVideo": "false"
+    },
+    {
+        "title": "picture 8",
+        "url": "/content/images/media/images/8.png",
+        "thumbUrl": "/content/images/media/images/8_thumb.png",
+        "isVideo": "false"
+    },
+    {
+        "title": "picture 9",
+        "url": "/content/images/media/images/9.png",
+        "thumbUrl": "/content/images/media/images/9_thumb.png",
+        "isVideo": "false"
+    }
+]

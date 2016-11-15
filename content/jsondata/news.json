@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "date": "14/11/2016",
+        "category": "Announcements",
+        "translations": [
+                {
+                "locale": "French",
+                "title": "Bienvenue sur notre nouveau site",
+                "content": "Nous approchons de la release de la pre-alpha, et avons réalisé un nouveau site pour le projet. Vous trouverez ici des screenshots, artworks, une présentation du jeu et de l'équipe."
+                },
+                {
+                "locale": "English",
+                "title": "Welcome to our new website",
+                "content": "As we near the pre-alpha release, we put together a website to showcase screenshots, artworks and the team members."
+                }
+            ]
+    }
+]

@@ -28,11 +28,11 @@ export class NewsComponent implements OnInit {
                                               () => undefined);
     }
 
-        public isSelectedLanguage(locale: string) {
-        if (this._translateService.currentLang === "en" && locale === "English" ||
-            this._translateService.currentLang === "fr" && locale === "French") {
-            return true;
-        }
+    public isSelectedLanguage(locale: string) {
+    if (this._translateService.currentLang === "en" && locale === "English" ||
+        this._translateService.currentLang === "fr" && locale === "French") {
+        return true;
+    }
 
         return false;
     }
