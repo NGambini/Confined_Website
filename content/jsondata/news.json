@@ -15,5 +15,69 @@
                 "content": "As we near the pre-alpha release, we put together a website to showcase screenshots, artworks and the team members."
                 }
             ]
+    },
+	{
+        "id": 2,
+        "date": "24/11/2016",
+        "category": "Devlog",
+        "translations": [
+                {
+                "locale": "French",
+                "title": "Artworks",
+                "content": "" 
+				},
+                {
+                "locale": "English",
+                "title": "Artworks",
+                "content": ""
+				}
+            ],
+		"imagesUrl": [
+				{
+				"title": "picture 1",
+				"url": "/content/images/news/2/1.png",
+				"thumbUrl": "/content/images/news/2/1_thumb.png"
+				},
+				{
+				"title": "picture 2",
+				"url": "/content/images/news/2/2.png",
+				"thumbUrl": "/content/images/news/2/2_thumb.png"
+				},
+				{
+				"title": "picture 3",
+				"url": "/content/images/news/2/3.png",
+				"thumbUrl": "/content/images/news/2/3_thumb.png"
+				},
+				{
+				"title": "picture 4",
+				"url": "/content/images/news/2/4.png",
+				"thumbUrl": "/content/images/news/2/4_thumb.png"
+				},
+				{
+				"title": "picture 5",
+				"url": "/content/images/news/2/5.png",
+				"thumbUrl": "/content/images/news/2/5_thumb.png"
+				},
+				{
+				"title": "picture 6",
+				"url": "/content/images/news/2/6.png",
+				"thumbUrl": "/content/images/news/2/6_thumb.png"
+				},
+				{
+				"title": "picture 7",
+				"url": "/content/images/news/2/7.png",
+				"thumbUrl": "/content/images/news/2/7_thumb.png"
+				},
+				{
+				"title": "picture 8",
+				"url": "/content/images/news/2/8.png",
+				"thumbUrl": "/content/images/news/2/8_thumb.png"
+				},
+				{
+				"title": "picture 9",
+				"url": "/content/images/news/2/9.png",
+				"thumbUrl": "/content/images/news/2/9_thumb.png"
+				}
+		]
     }
 ]
