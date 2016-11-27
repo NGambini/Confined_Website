@@ -23,7 +23,7 @@ export class NewsComponent implements OnInit {
 
     public ngOnInit() {
         this.selectedLanguage = Languages.English;
-        this._newsService.getNews().subscribe(news => this.news = news,
+        this._newsService.getNews().subscribe(news => this.news = news.reverse(),
                                               error => { console.log(error); },
                                               () => undefined);
     }

@@ -13,7 +13,7 @@
                     "content": "Developer with a passion for gaming, Noé lead the team while helping with the game programming."
                 }
             ],
-            "picture": "/content/images/team/shyperson.png",
+            "picture": "/content/images/team/noe.png",
             "linkedinUrl": "https://www.linkedin.com/in/ngambini",
             "websiteUrl": "http://noegambini.com/"
         },
@@ -70,6 +70,23 @@
             "linkedinUrl": "https://fr.linkedin.com/in/paul-antoine-riva-121024b5"
         },
         {
+            "name": "Aimé Juvin",
+            "school": "ARIES",
+            "jobTitles": ["TEAM.JOBS.LEADART"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": "Aimé est un graphiste 3D qui travail en tant que technical artist en Rig et Animation ainsi qu'en R&D."
+                },
+                {
+                    "locale":"English",
+                    "content": "Aimé is a 3D graphist who worked as technical artist in Rigging and animation, also working on R&D to improve some project requirements."
+                }
+            ],
+            "picture": "/content/images/team/shyperson.png",
+            "websiteUrl": "https://ajuvin.artstation.com/"
+        },
+        {
             "name": "Édouard Clerc",
             "school": "E-ARTSUP",
             "jobTitles": ["TEAM.JOBS.2DARTIST", "TEAM.JOBS.WEBDESIGNER"],
@@ -103,42 +120,6 @@
             "picture": "/content/images/team/felix.png",
             "linkedinUrl": "https://www.linkedin.com/in/f%C3%A9lix-carcone-a99b79ab",
             "websiteUrl": "http://felixcarcone.fr/"
-        },
-        {
-            "name": "Benjamin Hirschfield",
-            "school": "EPITECH",
-            "jobTitles": ["TEAM.JOBS.DEV", "TEAM.JOBS.LEVELDESIGNER"],
-            "bios": [
-                {
-                    "locale":"French",
-                    "content": "Passionné par la programmation et de jeux vidéos, Benjamin a participer à la mise en ligne du premier site et à du mapping."
-                },
-                {
-                    "locale":"English",
-                    "content": "Passionate about programming and video games, Benjamin has worked on the first version of the web site and did some mapping."
-                }
-            ],
-            "picture": "/content/images/team/shyperson.png",
-            "linkedinUrl": "https://linkedin.com/in/benjamin-hirschfield-57b011132",
-            "websiteUrl": "https://hirschfieldbenjamin.wordpress.com/"
-        },
-        {
-            "name": "Karel Font",
-            "school": "EPITECH",
-            "jobTitles": ["TEAM.JOBS.2DARTIST"],
-            "bios": [
-                {
-                    "locale":"French",
-                    "content": "Karel est étudiant en développement, et possède des connaissances en design. Il s'est chargé des premiers dessins pour les armes, et autres."
-                },
-                {
-                    "locale":"English",
-                    "content": "Karel is a student in software engineering with knowledge in graphic designs. He did the initial art on the weapons and such."
-                }
-            ],
-            "picture": "/content/images/team/karel.png",
-            "linkedinUrl": "https://linkedin.com/in/benjamin-hirschfield-57b011132",
-            "websiteUrl": "https://hirschfieldbenjamin.wordpress.com/"
         },
         {
             "name": "Axel Jacquemet",
@@ -175,22 +156,39 @@
             "websiteUrl": "https://www.artstation.com/artist/ricko",
             "linkedinUrl": "https://fr.linkedin.com/in/erik-campeaux-870453104/fr"
         },
+
         {
-            "name": "Aimé Juvin",
+            "name": "William Villoing-Bardet",
             "school": "ARIES",
             "jobTitles": ["TEAM.JOBS.LEADART"],
             "bios": [
                 {
                     "locale":"French",
-                    "content": "Axel est un graphiste 2D/3D, passionné de jeux vidéos et de films d'animation. Il s'est occupé principalement de la version finale du design de l'alien et de sa modélisation."
+                    "content": "William a été responsable de toutes les étapes du design des marines et de leurs armes."
                 },
                 {
                     "locale":"English",
-                    "content": "Axel is a 3D and 2D graphist, fond of of video games and animation movies. He was mainly in charge of the final alien design and modelisation."
+                    "content": "William for responsible for all steps in the marine's design."
                 }
             ],
-            "picture": "/content/images/team/shyperson.png",
-            "websiteUrl": "https://ajuvin.artstation.com/"
+            "picture": "/content/images/team/gnio.png",
+            "linkedinUrl": "https://fr.linkedin.com/in/william-villoing-bardet-6a5437111/fr"
+        },
+        {
+            "name": "William Gelberg",
+            "school": "ENSAAMA",
+            "jobTitles": ["TEAM.JOBS.3DARTIST", "TEAM.JOBS.2DARTIST"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": "Si il y a bien une chose que William apprécie, c'est le challenge de la diversité. C'est pourquoi ce Designer de Produits de formation s'est tenté à l'expérience du jeu vidéo en rejoignant notre team."
+                },
+                {
+                    "locale":"English",
+                    "content": "If there is one thing William appreciates above all, it's the challenge of diversity. That's why this Product Designer wanted to challenge himself doing within the team some arts for this video game."
+                }
+            ],
+            "picture": "/content/images/team/willy.png"
         },
         {
             "name": "Agathe Girard",
@@ -208,6 +206,41 @@
             ],
             "picture": "/content/images/team/agathe.png",
             "websiteUrl": "https://www.artstation.com/artist/zaggirard"
+        },
+        {
+            "name": "Karel Font",
+            "school": "EPITECH",
+            "jobTitles": ["TEAM.JOBS.2DARTIST"],
+            "bios": [
+                {
+                    "locale":"French",
+                    "content": "Karel est étudiant en développement, et possède des connaissances en design. Il s'est chargé des premiers dessins pour les armes, et autres."
+                },
+                {
+                    "locale":"English",
+                    "content": "Karel is a student in software engineering with knowledge in graphic designs. He did the initial art on the weapons and such."
+                }
+                ],
+            "picture": "/content/images/team/karel.png",
+            "linkedinUrl": "https://linkedin.com/in/benjamin-hirschfield-57b011132",
+            "websiteUrl": "https://hirschfieldbenjamin.wordpress.com/"
+        },
+        {
+    "name": "Benjamin Hirschfield",
+    "school": "EPITECH",
+    "jobTitles": ["TEAM.JOBS.DEV", "TEAM.JOBS.LEVELDESIGNER"],
+    "bios": [
+        {
+            "locale":"French",
+            "content": "Passionné par la programmation et de jeux vidéos, Benjamin a participer à la mise en ligne du premier site et à du mapping."
+        },
+        {
+            "locale":"English",
+            "content": "Passionate about programming and video games, Benjamin has worked on the first version of the web site and did some mapping."
         }
-
+    ],
+    "picture": "/content/images/team/shyperson.png",
+    "linkedinUrl": "https://linkedin.com/in/benjamin-hirschfield-57b011132",
+    "websiteUrl": "https://hirschfieldbenjamin.wordpress.com/"
+        }
 ]

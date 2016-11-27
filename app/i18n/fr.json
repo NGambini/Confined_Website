@@ -14,16 +14,16 @@
         "IN": "dans"
     },
     "HOME": {
-        "INTRODUCTION": "Confined est un jeu de tir multijoueur asymétrique prenant place dans un univers futuriste horifique",
+        "INTRODUCTION": "Confined est un jeu de tir multijoueur asymétrique prenant place dans un univers futuriste horrifique",
         "NEWCONCEPT": "Un concept original",
         "THETEAM": "Qui sommes-nous ?",
         "WHENRELEASE": "Quand pourrais-je jouer au jeu ?",
         "INSPIRATION": "Inspirations",
         "CONTENT": {
             "NEWCONCEPT": "Confined oppose une équipe de Marines suréquipés contre un alien presque invisible, fragile mais rapide et possédant des attaques dévastatrices. L'alien doit utiliser ses compétences et son environnement pour éliminer les Marines isolés, pendant que les Marines doivent travailler en équipe afin de sécuriser la zone.",
-            "THETEAM": "Ce qui a débuté comme un projet étudiant est devenu un projet ambitieux réunissant plus d'une dizaine de personnes à travers la France. Développer ce jeu nous permet d'améliorer notre visibilité sur la scène indépendante et représente en même temps un défi tant en programmation qu'en art ou en organisation et gestion d'équipe. Découvrez-en plus sur nous à la page \"L'équipe\"",
+            "THETEAM": "Ce qui a débuté comme un projet étudiant est devenu un projet ambitieux réunissant plus d'une dizaine de personnes à travers la France. Développer ce jeu nous permet d'améliorer notre visibilité sur la scène indépendante et représente en même temps un défi tant en programmation qu'en art ou en organisation et gestion d'équipe. Découvrez-en plus sur nous à la page \"L'équipe\".",
             "WHENRELEASE": "Nous sommes encore loin de pouvoir proposer une version complète, mais nous travaillons sur une version pre-alpha que nous souhaitons proposer en téléchargement gratuit sur notre site. Cette version sera disponible \"quand elle sera prête\".",
-            "INSPIRATION": "Notre principale source d'inspiration est le mod d'Half-Life 2 \"Hidden Source\". Récemment, certains jeux comme Evolve proposent un système de jeu asymétrique mais nous pensons que ce système reste trop peu utilisé dans les jeux modernes"
+            "INSPIRATION": "Notre principale source d'inspiration est le mod d'Half-Life 2 \"Hidden Source\". Récemment, certains jeux comme Evolve proposent un système de jeu asymétrique mais nous pensons que ce système reste trop peu utilisé dans les jeux modernes."
         }
 
     },
