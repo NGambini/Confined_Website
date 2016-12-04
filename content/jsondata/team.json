@@ -84,7 +84,8 @@
                 }
             ],
             "picture": "/content/images/team/shyperson.png",
-            "websiteUrl": "https://ajuvin.artstation.com/"
+            "websiteUrl": "https://ajuvin.artstation.com/",
+            "linkedinUrl": "https://www.linkedin.com/in/ajuvin"
         },
         {
             "name": "Édouard Clerc",
@@ -201,7 +202,7 @@
                 },
                 {
                     "locale":"English",
-                    "content": "Agathe is a student currently earning my BA in 3D Conception & VFX, and her favourite areas are texturing, lighting, compositing and concept art. She was responsible of the sculpt details and the texturing of the Alien arms."
+                    "content": "Agathe is a student currently earning her BA in 3D Conception & VFX, and her favourite areas are texturing, lighting, compositing and concept art. She was responsible of the sculpt details and the texturing of the Alien arms."
                 }
             ],
             "picture": "/content/images/team/agathe.png",

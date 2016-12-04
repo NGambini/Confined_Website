@@ -4,7 +4,7 @@
             <div class="black-box hidden-xs-down"></div>
             <div class="title-text">
                 <h3 *ngFor="let translation of article.translations" [hidden]="!isSelectedLanguage(translation.locale)" class="news-title">{{ translation.title }}</h3>
-                <h4 class="news-subtitle">{{ 'NEWS.POSTEDON' | translate }} {{ article.date }} {{ 'NEWS.IN' | translate }} <span class="news-category">category</span>
+                <h4 class="news-subtitle">{{ 'NEWS.POSTEDON' | translate }} {{ article.date }} {{ 'NEWS.IN' | translate }} <span class="news-category">{{ article.category }}</span>
                 </h4>
             </div>
         </div>

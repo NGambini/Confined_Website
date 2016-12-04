@@ -23,60 +23,89 @@
         "translations": [
                 {
                 "locale": "French",
-                "title": "Artworks",
-                "content": "" 
+                "title": "Artworks & renders",
+                "content": "Voici certains artworks et renders du marine" 
 				},
                 {
                 "locale": "English",
-                "title": "Artworks",
-                "content": ""
+                "title": "Artworks & renders",
+                "content": "Here are some marines artwork and renders."
 				}
             ],
 		"imagesUrl": [
 				{
 				"title": "picture 1",
-				"url": "/content/images/news/2/1.png",
-				"thumbUrl": "/content/images/news/2/1_thumb.png"
+				"url": "/content/images/news/1.png",
+				"thumbUrl": "/content/images/news/1_thumb.png"
 				},
 				{
 				"title": "picture 2",
-				"url": "/content/images/news/2/2.png",
-				"thumbUrl": "/content/images/news/2/2_thumb.png"
+				"url": "/content/images/news/2.png",
+				"thumbUrl": "/content/images/news/2_thumb.png"
 				},
 				{
 				"title": "picture 3",
-				"url": "/content/images/news/2/3.png",
-				"thumbUrl": "/content/images/news/2/3_thumb.png"
+				"url": "/content/images/news/3.png",
+				"thumbUrl": "/content/images/news/3_thumb.png"
 				},
 				{
 				"title": "picture 4",
-				"url": "/content/images/news/2/4.png",
-				"thumbUrl": "/content/images/news/2/4_thumb.png"
+				"url": "/content/images/news/4.png",
+				"thumbUrl": "/content/images/news/4_thumb.png"
 				},
 				{
 				"title": "picture 5",
-				"url": "/content/images/news/2/5.png",
-				"thumbUrl": "/content/images/news/2/5_thumb.png"
+				"url": "/content/images/news/5.png",
+				"thumbUrl": "/content/images/news/5_thumb.png"
 				},
 				{
 				"title": "picture 6",
-				"url": "/content/images/news/2/6.png",
-				"thumbUrl": "/content/images/news/2/6_thumb.png"
+				"url": "/content/images/news/6.png",
+				"thumbUrl": "/content/images/news/6_thumb.png"
 				},
 				{
 				"title": "picture 7",
-				"url": "/content/images/news/2/7.png",
-				"thumbUrl": "/content/images/news/2/7_thumb.png"
+				"url": "/content/images/news/7.png",
+				"thumbUrl": "/content/images/news/7_thumb.png"
 				},
 				{
 				"title": "picture 8",
-				"url": "/content/images/news/2/8.png",
-				"thumbUrl": "/content/images/news/2/8_thumb.png"
+				"url": "/content/images/news/8.png",
+				"thumbUrl": "/content/images/news/8_thumb.png"
 				},
 				{
 				"title": "picture 9",
-				"url": "/content/images/news/2/9.png",
-				"thumbUrl": "/content/images/news/2/9_thumb.png"
+				"url": "/content/images/news/9.png",
+				"thumbUrl": "/content/images/news/9_thumb.png"
+				}
+		]
+    },
+	{
+        "id": 3,
+        "date": "24/11/2016",
+        "category": "Devlog",
+        "translations": [
+                {
+                "locale": "French",
+                "title": "ALien arms",
+                "content": "Voici les bras de l'alien (modèle première personne)." 
+				},
+                {
+                "locale": "English",
+                "title": "Artworks & renders",
+                "content": "Here are the alien arms (first person model)."
+				}
+            ],
+		"imagesUrl": [
+				{
+				"title": "picture 1",
+				"url": "/content/images/news/alien1.jpg",
+				"thumbUrl": "/content/images/news/alien1_thumb.jpg"
+				},
+				{
+				"title": "picture 2",
+				"url": "/content/images/news/alien2.jpg",
+				"thumbUrl": "/content/images/news/alien2_thumb.jpg"
 				}
 		]
     }

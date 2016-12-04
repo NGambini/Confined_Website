@@ -300,8 +300,8 @@ body {
 }
 
 .home-title {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .factsheet-item {
@@ -441,7 +441,7 @@ input.volume-slider[type="range"]::-ms-fill-upper {
 .team-member {
     display: block;
     text-align: left;
-    margin: 10px 30px 10px 30px;
+    margin: 50px 30px 50px 30px;
 }
 
 .member-odd {
